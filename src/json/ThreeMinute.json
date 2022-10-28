@@ -1,0 +1,32 @@
+{
+  "ThreeMinuteItems": [
+    {
+      "id": 0,
+      "imgsrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2466%2Fce876081.jpg&w=800&q=75",
+      "imgalt": "CTO가 말하는 스타트업 개발자 생존 백서",
+      "title": "CTO가 말하는 스타트업 개발자 생존 백서",
+      "hashtag": "#개발 #커리어고민 #취업/이직"
+    },
+    {
+      "id": 1,
+      "imgsrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2465%2Fbd154172.jpg&w=800&q=75",
+      "imgalt": "개발자 이력서 제출 전에 반드시 확인해 보세요!",
+      "title": "개발자 이력서 제출 전에 반드시 확인해 보세요!",
+      "hashtag": "#개발 #취업/이직 #커리어고민" 
+    },
+    {
+      "id": 2,
+      "imgsrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2492%2F9bb38afe.jpg&w=800&q=75",
+      "imgalt": "조직을 망치는 인센티브 정책",
+      "title": "조직을 망치는 인센티브 정책",
+      "hashtag": "#HR #조직문화 #경영/전략"
+    },
+    {
+      "id": 3,
+      "imgsrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2494%2Fb1c66076.jpg&w=800&q=75",
+      "imgalt": "스타트업으로 간 시니어가 부딪히는 어려움 세 가지",
+      "title": "스타트업으로 간 시니어가 부딪히는 어려움 세 가지",
+      "hashtag": "#조직문화 #리더십 #경영·비즈니스"
+    }
+  ]
+}

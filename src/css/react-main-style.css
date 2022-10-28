@@ -141,7 +141,7 @@
 }
 .content_card_text {
   width: 250px;
-  height: 42px;
+  max-height: 42px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -653,7 +653,17 @@
 
 /* 회원가입 모달창 부분 */
 /* 배경 부분으로 하려고 했던 css */
-#signinmal_background {
+.openModal{
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+.signinmal_background {
   /* z-index: 999; */
   display: none;
   position: fixed;
@@ -662,6 +672,7 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
 }
 .signInMal {
   width: 25rem;
@@ -673,6 +684,7 @@
   overflow: hidden;
   height: calc(100vh - 9.3rem);
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 .signInMalHead {
   height: 22px;

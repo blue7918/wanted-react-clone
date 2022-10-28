@@ -32,13 +32,13 @@ function ReasonToSubscribe() {
                       d="M576.95 196.13c-.217-.217-.57-.217-.787 0-.217.218-.217.57 0 .788l3.71 3.71c.217.217.57.217.787 0l6.677-6.678c.217-.217.217-.57 0-.787-.217-.217-.57-.217-.787 0l-6.284 6.284-3.316-3.316z"
                     ></path>
                   </defs>
-                  <g fill="currentColor" fill-rule="evenodd">
+                  <g fill="currentColor" fillRule="evenodd">
                     <g transform="translate(-575 -192)">
                       <use
                         fill="#FFF"
-                        fill-rule="nonzero"
+                        fillRule="nonzero"
                         stroke="#FFF"
-                        stroke-width=".3"
+                        strokeWidth=".3"
                         xlinkHref="#al3je9dvha"
                       ></use>
                     </g>
