@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './css/react-main-style.css';
 import './css/react-header.css';
 import './css/react-reset.css';
@@ -14,20 +14,26 @@ import ReasonToSubscribe from './component/first-page/ReasonToSubscribe';
 import LookingForRecruit from './component/first-page/LookingForRecruit';
 import Footer from './component/basic-setting/Footer';
 import { FaRProject } from 'react-icons/fa';
-import MainPage from './Main';
-import DevelopPage from './Develop';
-import JobDetailPage from './JobDetail';
 
-function App() {
+
+function Main() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/develop" element={<DevelopPage />} />
-        <Route path="/jobdetail" element={<JobDetailPage />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Header></Header>
+
+      <main>
+        <SlidePicture></SlidePicture>
+        <CareerContentList></CareerContentList>
+        <ThreeMinuteVOD></ThreeMinuteVOD>
+        <ForWorkerVOD></ForWorkerVOD>
+        <LineBannerAdv></LineBannerAdv>
+        <CareerEvent></CareerEvent>
+        <ReasonToSubscribe></ReasonToSubscribe>
+        <LookingForRecruit></LookingForRecruit>
+        <Footer></Footer>
+      </main>
+    </div>
   );
 }
 
-export default App;
+export default Main;
