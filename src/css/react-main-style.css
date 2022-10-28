@@ -653,7 +653,7 @@
 
 /* 회원가입 모달창 부분 */
 /* 배경 부분으로 하려고 했던 css */
-.openModal{
+.openModal {
   display: block;
   position: fixed;
   width: 100%;
@@ -672,7 +672,7 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9;
+  /* z-index: 9; */
 }
 .signInMal {
   width: 25rem;

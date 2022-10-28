@@ -7,11 +7,7 @@ function Modal(props) {
 
   return (
     // 모달이 열릴때 openModal 클래스가 생성된다.
-    <div
-      className={
-        open ? ' openModal' : 'signinmal_background'
-      }
-    >
+    <div className={open ? ' openModal' : 'signinmal_background'}>
       {open ? (
         <div id="signinmal_first" className="signInMal">
           <div className="signInMalHead">
@@ -42,21 +38,21 @@ function Modal(props) {
             </div>
             <div className="signInMalBodyInputPanel">
               <div className="InputPanelEmailBox">
-                {/* <label for="email" className="InputPanelEmailLabel">
+                <label htmlFor="email" className="InputPanelEmailLabel">
                   이메일
-                </label> */}
-                {/* <input
+                </label>
+                <input
                   type="email"
                   placeholder="이메일을 입력해 주세요."
                   id="email"
                   value=""
-                /> */}
+                />
                 <div id="write_right_address">
                   올바른 이메일 주소를 입력해주세요.
                 </div>
               </div>
               <div id="input_panel_button">
-                {/* <input type="submit" value="&#xf0e0;   이메일로 계속하기" /> */}
+                <input type="submit" value="이메일로 계속하기" />
               </div>
               <div className="InputPanelOrSocial">or</div>
               <div className="InputPanelSocialLogin">

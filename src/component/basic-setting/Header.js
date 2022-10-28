@@ -13,6 +13,7 @@ function Header() {
   }
 
   return (
+  <>
     <div className="NavBar">
       <nav className="navbar">
         <div className="navbar__menu">
@@ -155,7 +156,9 @@ function Header() {
         </div>
       </nav>
       <Modal modalOpen={modalOpen} modalClose={closeModal}></Modal>
-    </div>
+    </div>  
+  </>  
+
   );
 }
 
