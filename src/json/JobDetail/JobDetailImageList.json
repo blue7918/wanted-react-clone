@@ -1,0 +1,24 @@
+{
+  "JobDetailImageItem": [
+    {
+      "id": "0",
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fjhk6iry9ejxrp4uq__1080_790.jpg&w=1000&q=75",
+      "imgAlt": "비주얼신 - 안드로이드 앱 개발자(5년 이상)"
+    },
+    {
+      "id": "1",
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Ffashoxiiilbbjsmr__1080_790.jpg&w=1000&q=75",
+      "imgAlt": "비주얼신 - 안드로이드 앱 개발자(5년 이상)"
+    },
+    {
+      "id": "2",
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fckzxs6cep9jy7j2u__1080_790.jpg&w=1000&q=75",
+      "imgAlt": "비주얼신 - 안드로이드 앱 개발자(5년 이상)"
+    },
+    {
+      "id": "3",
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fkn48dppkkesdj1jv__1080_790.jpg&w=1000&q=75",
+      "imgAlt": "비주얼신 - 안드로이드 앱 개발자(5년 이상)"
+    }
+  ]
+}

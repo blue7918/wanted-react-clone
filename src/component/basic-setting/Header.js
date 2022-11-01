@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Modal from './modal/Modal';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [modalOpen, setModalOpen] = useState(false);
 
   function openModal() {
-    console.log(modalOpen);
     setModalOpen(true);
   }
   function closeModal() {
@@ -28,11 +27,9 @@ function Header() {
                   <em>직군 전체</em>
                 </li>
                 <li>
-                  <a href="../html파일/develop.html">
-                    <Link to="/develop">
-                      <em>개발</em>
-                    </Link>
-                  </a>
+                  <Link to="/develop">
+                    <em>개발</em>
+                  </Link>
                 </li>
                 <li>
                   <em>경영·비즈니스</em>
@@ -90,13 +87,16 @@ function Header() {
                 </li>
               </ul>
             </div>
-
-            <div className="main__logo set_center">Wanted</div>
+            <Link to="/" className="set_center">
+              <div className="main__logo">Wanted</div>
+            </Link>
           </div>
 
           <ul className="navbar__list">
             <li>
-              <a href="../html파일/jobdetail.html">채용</a>
+              <Link to="/jobdetail">
+                <a>채용</a>
+              </Link>
             </li>
             <li>
               <a>이벤트</a>
@@ -119,7 +119,7 @@ function Header() {
           </ul>
 
           <div className="navbar_right">
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div className="setPlace">
               <button
                 className="SearchButton"
                 type="button"

@@ -23,8 +23,8 @@ function ReasonToSubscribe() {
             data-attribute-id="home__wantedPlus__button__click"
             data-button-kind="free"
           >
-            <span className="sub_button_label">
-              <span className="SvgIconRoot">
+            <span className="sub_button_label ">
+              <span className="SvgIconRoot setCheck">
                 <svg className="root__svg__DKYBi" viewBox="0 0 15 15">
                   <defs>
                     <path

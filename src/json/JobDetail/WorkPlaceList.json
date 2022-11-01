@@ -1,0 +1,11 @@
+{
+  "WorkPlaceItems": [
+    {
+      "id": 0,
+      "deadline": "마감일",
+      "deadlineText": "2022.11.30",
+      "place": "근무지역",
+      "placeText": "서울 강남구 선릉로 578 태정빌딩 8층"
+    }
+  ]
+}

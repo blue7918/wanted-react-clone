@@ -2,7 +2,7 @@
 
 /* -- 돌아가는 사진 부분 -- */
 .slide_picture {
-  margin-top: 25px;
+  margin-top: 75px;
   text-align: center;
 }
 /* 나에게 필요한 커리어 인사이트 부분 */
@@ -575,9 +575,13 @@
   font-size: 16px;
   font-weight: 800;
   display: inherit;
-  align-items: inherit;
+  align-items: center;
   justify-content: inherit;
   color: inherit;
+}
+.setCheck {
+  padding-right: 2px;
+  padding-top: 1.4px;
 }
 .check_icon {
   margin: 3px 2px 0 -1px;

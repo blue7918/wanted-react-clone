@@ -6,6 +6,10 @@
   align-items: center;
   height: 50px;
   border-bottom: solid 0.1px rgba(218, 216, 216, 0.621);
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 8;
 }
 
 .navbar {
@@ -138,9 +142,14 @@
 }
 
 /* -- header 오른쪽부분 -- */
+
 .navbar_right {
   display: flex;
   list-style: none;
+  align-items: center;
+}
+.setPlace {
+  display: flex;
   align-items: center;
 }
 .SearchButton {

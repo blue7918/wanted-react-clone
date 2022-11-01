@@ -1,0 +1,14 @@
+{
+  "JobDetailCompany": [
+    {
+      "id": 0,
+      "title": "안드로이드 앱 개발자(5년 이상)",
+      "company": "비주얼신",
+      "color": "#00AEAD",
+      "level": "응답률 매우 높음",
+      "levelPopUp": "지원 후 응답받을 확률이 95% 이상입니다.",
+      "location1": "서울",
+      "location2": "한국"
+    }
+  ]
+}

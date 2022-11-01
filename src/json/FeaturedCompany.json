@@ -1,0 +1,39 @@
+{
+  "FeaturedCompanyItem": [
+    {
+      "id": 0,
+      "imgUrl": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5148%2Fzqoq1ivkli8iioas__400_400.jpg&w=400&q=75",
+      "logoImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.e2c18b96.jpg&w=100&q=75",
+      "name": "나인코퍼레이션",
+      "positions": "6개 포지션"
+    },
+    {
+      "id": 1,
+      "imgUrl": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F9482%2Fnnidzimc9sv8fmis__400_400.jpg&w=400&q=75",
+      "logoImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.eee507ab.jpg&w=100&q=75",
+      "name": "디리아",
+      "positions": "1개 포지션"
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F79%2Fno3ey0e5mjbismfq__400_400.jpg&w=400&q=75",
+      "logoImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.cc473dbf.jpg&w=100&q=75",
+      "name": "원티드랩",
+      "positions": "17개 포지션"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5148%2Fzqoq1ivkli8iioas__400_400.jpg&w=400&q=75",
+      "logoImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.e2c18b96.jpg&w=100&q=75",
+      "name": "나인코퍼레이션",
+      "positions": "6개 포지션"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5148%2Fzqoq1ivkli8iioas__400_400.jpg&w=400&q=75",
+      "logoImg": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.e2c18b96.jpg&w=100&q=75",
+      "name": "나인코퍼레이션",
+      "positions": "6개 포지션"
+    }
+  ]
+}

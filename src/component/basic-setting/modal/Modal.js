@@ -1,12 +1,10 @@
 import React from 'react';
 
 function Modal(props) {
-  // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴
   const open = props.modalOpen;
   const close = props.modalClose;
 
   return (
-    // 모달이 열릴때 openModal 클래스가 생성된다.
     <div className={open ? ' openModal' : 'signinmal_background'}>
       {open ? (
         <div id="signinmal_first" className="signInMal">

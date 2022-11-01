@@ -1,0 +1,44 @@
+{
+  "JobSKillItems":[
+    {
+      "id":"0",
+      "skill":"Github"
+    },
+    {
+      "id":"1",
+      "skill":"JIRA"
+    },
+    {
+      "id":"2",
+      "skill":"Android"
+    },
+    {
+      "id":"3",
+      "skill":"Shader"
+    },
+    {
+      "id":"4",
+      "skill":"Java"
+    },
+    {
+      "id":"5",
+      "skill":"Kotlin"
+    },
+    {
+      "id":"6",
+      "skill":"Jenkins"
+    },
+    {
+      "id":"7",
+      "skill":"Spring Framework"
+    },
+    {
+      "id":"8",
+      "skill":"안드로이드 개발"
+    },
+    {
+      "id":"9",
+      "skill":"iOS 개발"
+    }
+  ]
+}
