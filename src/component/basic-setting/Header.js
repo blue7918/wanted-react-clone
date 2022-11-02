@@ -1,15 +1,24 @@
 import React, { useState } from 'react';
 import Modal from './modal/Modal';
+import Modal2 from './modal/Modal2';
 import { Link } from 'react-router-dom';
 
 function Header() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen2, setModalOpen2] = useState(false);
 
   function openModal() {
     setModalOpen(true);
   }
   function closeModal() {
     setModalOpen(false);
+  }
+
+  function signin() {
+    setModalOpen2(true);
+  }
+  function closeModal2() {
+    setModalOpen2(false);
   }
 
   return (
@@ -95,26 +104,26 @@ function Header() {
           <ul className="navbar__list">
             <li>
               <Link to="/jobdetail">
-                <a>채용</a>
+                <div>채용</div>
               </Link>
             </li>
             <li>
-              <a>이벤트</a>
+              <div>이벤트</div>
             </li>
             <li>
-              <a>직군별 연봉</a>
+              <div>직군별 연봉</div>
             </li>
             <li>
-              <a>이력서</a>
+              <div>이력서</div>
             </li>
             <li>
-              <a>커뮤니티</a>
+              <div>커뮤니티</div>
             </li>
             <li>
-              <a>프리랜서</a>
+              <div>프리랜서</div>
             </li>
             <li>
-              <a>AI합격예측</a>
+              <div>AI합격예측</div>
             </li>
           </ul>
 
@@ -150,7 +159,10 @@ function Header() {
                   </g>
                 </svg>
               </button>
-              <button id="signup_button" onClick={openModal}>
+              {/* <button id="signup_button" onClick={openModal}>
+                회원가입/로그인
+              </button> */}
+              <button id="signup_button" onClick={signin}>
                 회원가입/로그인
               </button>
             </div>
@@ -158,7 +170,8 @@ function Header() {
             <div className="ServiceButton">기업서비스</div>
           </div>
         </nav>
-        <Modal modalOpen={modalOpen} modalClose={closeModal}></Modal>
+        {/* <Modal modalOpen={modalOpen} modalClose={closeModal}></Modal> */}
+        <Modal2 modalOpen={modalOpen2} modalClose={closeModal2}></Modal2>
       </div>
     </>
   );

@@ -5,7 +5,7 @@ function JobWorkPlace() {
   return (
     <section className="jobWorkPlace">
       {Items.WorkPlaceItems.map((item) => (
-        <>
+        <div key={item.id}>
           <div>
             <span className="jobWorkPlaceHeader">{item.deadline}</span>
             <span className="jobWorkPlaceBody">{item.deadlineText}</span>
@@ -15,7 +15,7 @@ function JobWorkPlace() {
             <span className="jobWorkPlaceBody">{item.placeText}</span>
           </div>
           <JobWorkPlaceMap />
-        </>
+        </div>
       ))}
 
       {/* <a

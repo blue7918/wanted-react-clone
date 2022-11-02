@@ -1,15 +1,15 @@
-import Items from '../../../json/JobDetail/JobDetailListList.json'
+import Items from '../../../json/JobDetail/JobDetailListList.json';
 
-function JobDetailList(){
-  return(
-    <ul class="jobListItemContainer">
+function JobDetailList() {
+  return (
+    <ul className="jobListItemContainer">
       {Items.JobDetailListItems.map((item) => (
         <li className="jobListItem" key={item.id}>
           <header style={{ backgroundImage: `url(${item.imgUrl})` }}>
             <button
               className="bookmarkButton"
               type="button"
-              ariaLabel="bookmark button"
+              aria-label="bookmark button"
             >
               <svg
                 width="22"

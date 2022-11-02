@@ -10,8 +10,8 @@ function JobDetail() {
     <>
       <Header />
       <JobDetailBody />
-      <div class="jobAssociated set_mwidth">
-        <h5 class="jobAssociatedTitle">이 포지션을 찾고 계셨나요?</h5>
+      <div className="jobAssociated set_mwidth">
+        <h5 className="jobAssociatedTitle">이 포지션을 찾고 계셨나요?</h5>
         <JobDetailList />
       </div>
       <Footer/>

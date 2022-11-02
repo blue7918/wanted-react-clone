@@ -690,6 +690,18 @@
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+.signInMal2 {
+  width: 25rem;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  height: calc(100vh - 9.3rem);
+  transform: translate(-50%, -50%);
+  z-index: 12;
+}
 .signInMalHead {
   height: 22px;
   padding: 1.16rem 1.125rem 1rem 1.25rem;
@@ -890,10 +902,7 @@ input::placeholder {
   padding: 20px;
   padding-bottom: 0;
 }
-#signinmal_second {
-  max-width: 400px;
-  display: none;
-}
+
 #signin_form > p {
   margin: 17px 0px 7px;
   color: rgb(136, 136, 136);

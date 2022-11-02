@@ -1,10 +1,12 @@
-import Items from '../../../json/JobDetail/JobSkillList.json'
+import Items from '../../../json/JobDetail/JobSkillList.json';
 
-function JobSKills(){
-  return(
-    <div class="jobContentDescriptionSkillsWrapper">
+function JobSKills() {
+  return (
+    <div className="jobContentDescriptionSkillsWrapper">
       {Items.JobSKillItems.map((item) => (
-        <div class="jobContentSkillItem" key={item.id}>{item.skill}</div>
+        <div className="jobContentSkillItem" key={item.id}>
+          {item.skill}
+        </div>
       ))}
     </div>
   );

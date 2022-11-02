@@ -134,7 +134,7 @@
   cursor: pointer;
   color: inherit;
 }
-.navbar__list > li > a {
+.navbar__list > li > div {
   color: inherit;
 }
 .navbar__list li:hover {

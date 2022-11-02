@@ -17,7 +17,7 @@ function JobDetailHeader() {
       <div className="jobContent">
         <section className="jobContentDescription">
           {/* <JobDescription /> */}
-          <section class="jobContentDescription">
+          <section className="jobContentDescription">
             <p>
               <span>
                 비주얼신(구 피니뷰)은 세상의 모든 현실을 3D 디지털 트윈으로
