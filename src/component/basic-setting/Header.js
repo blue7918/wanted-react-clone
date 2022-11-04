@@ -4,21 +4,19 @@ import Modal2 from './modal/Modal2';
 import { Link } from 'react-router-dom';
 
 function Header() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalOpen2, setModalOpen2] = useState(false);
-
+  const [modalOpen, setModalOpen] = useState(0);
   function openModal() {
-    setModalOpen(true);
+    setModalOpen(1);
   }
   function closeModal() {
-    setModalOpen(false);
+    setModalOpen(0);
   }
 
-  function signin() {
-    setModalOpen2(true);
+  function openModal2() {
+    setModalOpen(2);
   }
   function closeModal2() {
-    setModalOpen2(false);
+    setModalOpen(0);
   }
 
   return (
@@ -159,19 +157,23 @@ function Header() {
                   </g>
                 </svg>
               </button>
-              {/* <button id="signup_button" onClick={openModal}>
-                회원가입/로그인
-              </button> */}
-              <button id="signup_button" onClick={signin}>
+              <button id="signup_button" onClick={openModal}>
                 회원가입/로그인
               </button>
+              {/* <button id="signup_button" onClick={signin}>
+                회원가입/로그인
+              </button> */}
             </div>
             <div className="draw_small_line"></div>
             <div className="ServiceButton">기업서비스</div>
           </div>
         </nav>
-        {/* <Modal modalOpen={modalOpen} modalClose={closeModal}></Modal> */}
-        <Modal2 modalOpen={modalOpen2} modalClose={closeModal2}></Modal2>
+        <Modal
+          modalOpen={modalOpen}
+          modalClose={closeModal}
+          openModal2={openModal2}
+        ></Modal>
+        <Modal2 modalOpen={modalOpen} modalClose={closeModal2}></Modal2>
       </div>
     </>
   );

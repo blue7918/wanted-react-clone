@@ -172,8 +172,11 @@
   margin: 1.25rem 0 2.5rem 0;
 }
 .jobWorkPlace > div {
-  margin-bottom: 20px;
   display: flex;
+  flex-direction: column;
+}
+.jobWorkPlace > div > div {
+  margin-bottom: 20px;
 }
 .jobWorkPlaceHeader {
   color: #999;

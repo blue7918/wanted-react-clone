@@ -43,8 +43,8 @@ function Modal2(props) {
   };
 
   return (
-    <div className={open ? ' openModal' : 'signinmal_background'}>
-      {open ? (
+    <div className={open === 2 ? ' openModal' : ''}>
+      {open === 2 ? (
         <>
           <div id="signinmal_second" className="signInMal2">
             <div className="signInMalHead">
@@ -243,9 +243,9 @@ function Modal2(props) {
                       borderBottom: '0.063rem solid #e1e2e3',
                     }}
                   />
-                  {data?.map((data, key) => (
+                  {data?.map((data) => (
                     <div className="checkBoxBox2">
-                      <div key={key} className="checkBoxBox2InnerBox">
+                      <div key={data.id} className="checkBoxBox2InnerBox">
                         <input
                           type="checkbox"
                           name={`select-${data.id}`}

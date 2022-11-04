@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Modal(props) {
   const open = props.modalOpen;
   const close = props.modalClose;
 
-
   return (
-    <div className={open ? ' openModal' : 'signinmal_background'}>
-      {open ? (
+    <div className={open === 1 ? ' openModal' : ''}>
+      {open === 1 ? (
         <>
           <div id="signinmal_first" className="signInMal">
             <div className="signInMalHead">
@@ -45,14 +44,18 @@ function Modal(props) {
                     type="email"
                     placeholder="이메일을 입력해 주세요."
                     id="email"
-                    value=""
+                    defaultValue=""
                   />
                   <div id="write_right_address">
                     올바른 이메일 주소를 입력해주세요.
                   </div>
                 </div>
                 <div id="input_panel_button">
-                  <input type="submit" value="이메일로 계속하기" />
+                  <input
+                    type="submit"
+                    value="이메일로 계속하기"
+                    onClick={props.openModal2}
+                  />
                 </div>
                 <div className="InputPanelOrSocial">or</div>
                 <div className="InputPanelSocialLogin">

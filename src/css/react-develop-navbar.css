@@ -82,11 +82,16 @@
   padding-bottom: 1.563rem;
   padding-top: 0.625rem;
 }
-@media (max-width: 1200px) {
-  .filterListWrapper {
-    margin: 0 auto;
-    width: 87.72%;
-  }
+.fixedBox {
+  position: fixed;
+  border-bottom: 1px solid #36f;
+  padding: 20px 0 25px;
+  width: 100vw;
+  background-color: #fff;
+  z-index: 3;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .filterListButtonContainer {
   display: flex;
@@ -237,12 +242,6 @@
 
 .jobListWrapper {
   margin-bottom: 0.75rem;
-}
-@media (max-width: 1200px) {
-  .jobListWrapper {
-    margin: 0 auto 0.75rem;
-    width: 87.72%;
-  }
 }
 .jobListBookmarkContainer {
   margin-bottom: 0.75rem;

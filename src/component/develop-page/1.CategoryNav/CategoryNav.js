@@ -1,17 +1,17 @@
-function CategoryNav(){
-  return(
+function CategoryNav() {
+  return (
     <article role="navigation" className="categoryNavbarContainer">
       <div className="categoryNavbarBody">
         <button
           className="categoryNavbarBodyFieldBox"
           type="button"
-          ariaLabel="popup navigation button"
+          aria-label="popup navigation button"
         >
           <span className="categoryNavbarBodyFieldText1">개발</span>
           <span
             className="moreButton"
             role="button"
-            ariaLabel="popup navigation button"
+            aria-label="popup navigation button"
           >
             <svg
               xmlns="https://www.w3.org/2000/svg"
@@ -31,13 +31,13 @@ function CategoryNav(){
         <button
           type="button"
           className="categoryNavbarBodyFieldBox"
-          ariaLabel="popup navigation button"
+          aria-label="popup navigation button"
         >
           <span className="categoryNavbarBodyFieldText2">개발 전체</span>
           <span
             className="moreButton"
             role="button"
-            ariaLabel="popup navigation button"
+            aria-label="popup navigation button"
           >
             <svg
               xmlns="https://www.w3.org/2000/svg"

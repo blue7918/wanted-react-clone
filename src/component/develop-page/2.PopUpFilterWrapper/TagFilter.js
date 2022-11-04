@@ -10,9 +10,9 @@ function TagFilter() {
             {Items.TagListItem.map((item) => (
               <div
                 key={item.id}
-                dataIndex={item.id}
+                dataindex={item.id}
                 className="tagListSlide"
-                tabindex="-1"
+                tabIndex="-1"
                 style={{ outLine: 'none' }}
               >
                 <div>
