@@ -262,24 +262,6 @@ function Modal2(props) {
                       </p>
                     </div>
                   ))}
-                  {/* <div className="checkBoxBox2">
-                    <input type="checkbox" name="check" value="checkbox1" />
-                    <p>만 14세 이상입니다. (필수)</p>
-                  </div>
-                  <div className="checkBoxBox2">
-                    <div className="checkBoxBox2InnerBox">
-                      <input type="checkbox" name="check" value="checkbox2" />
-                      <p>oneID 이용약관 동의 (필수)</p>
-                    </div>
-                    <p style={{ fontWeight: 600, color: '#888' }}>자세히</p>
-                  </div>
-                  <div className="checkBoxBox2">
-                    <div className="checkBoxBox2InnerBox">
-                      <input type="checkbox" name="check" value="checkbox3" />
-                      <p>개인정보 및 수집 이용 동의 (필수)</p>
-                    </div>
-                    <p style={{ fontWeight: 600, color: '#888' }}>자세히</p>
-                  </div> */}
                 </div>
               </form>
             </div>

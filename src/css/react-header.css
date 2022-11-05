@@ -56,14 +56,21 @@
   display: flex;
   align-items: center;
   flex: 1 1;
-  padding: 0 1.25rem;
   width: 100%;
   cursor: pointer;
+}
+.mainCategoryList li :hover {
+  background-color: rgba(238, 237, 237, 0.731);
+  height: 100%;
+  width: inherit;
+  display: flex;
+  align-items: center;
 }
 .mainCategoryList li em {
   font-size: 0.813rem;
   font-weight: 700;
   font-style: normal;
+  padding: 0 1.25rem;
   letter-spacing: normal;
   color: #333;
   width: 100%;

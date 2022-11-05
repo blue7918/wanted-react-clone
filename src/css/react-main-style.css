@@ -798,7 +798,6 @@ input::placeholder {
   font-size: 0.938rem;
 }
 #write_right_address {
-  display: none;
   color: #fe415c;
   font-weight: 400;
   text-align: left;
@@ -818,6 +817,10 @@ input::placeholder {
   background-color: #36f;
   color: #fff;
   cursor: pointer;
+}
+#input_panel_button:disabled {
+  background-color: #dadada;
+  color: white;
 }
 #input_panel_button input {
   border: none;

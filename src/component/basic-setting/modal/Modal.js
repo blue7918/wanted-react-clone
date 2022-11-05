@@ -1,8 +1,41 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+
+const User = {
+  email: 'test@example.com',
+  // pw: 'test2323@@@'
+};
 
 function Modal(props) {
   const open = props.modalOpen;
   const close = props.modalClose;
+
+  const [email, setEmail] = useState('');
+  const [emailValid, setEmailValid] = useState(false);
+  const [notAllow, setNotAllow] = useState(true);
+
+  useEffect(() => {
+    if (emailValid) {
+      setNotAllow(false);
+      return;
+    }
+    setNotAllow(true);
+  }, [emailValid]);
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+    const regex =
+      /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+    if (regex.test(e.target.value)) {
+      setEmailValid(true);
+    } else {
+      setEmailValid(false);
+    }
+  };
+  const onClickConfirmButton = () => {
+    if (email === User.email) {
+    } else {
+    }
+  };
 
   return (
     <div className={open === 1 ? ' openModal' : ''}>
@@ -41,22 +74,29 @@ function Modal(props) {
                     이메일
                   </label>
                   <input
-                    type="email"
+                    type="text"
                     placeholder="이메일을 입력해 주세요."
                     id="email"
-                    defaultValue=""
+                    value={email}
+                    onChange={handleEmail}
                   />
                   <div id="write_right_address">
-                    올바른 이메일 주소를 입력해주세요.
+                    {!emailValid && email.length > 0 && (
+                      <div>올바른 이메일 주소를 입력해주세요.</div>
+                    )}
                   </div>
                 </div>
-                <div id="input_panel_button">
+                <button
+                  id="input_panel_button"
+                  onClick={onClickConfirmButton}
+                  disabled={notAllow}
+                >
                   <input
                     type="submit"
                     value="이메일로 계속하기"
                     onClick={props.openModal2}
                   />
-                </div>
+                </button>
                 <div className="InputPanelOrSocial">or</div>
                 <div className="InputPanelSocialLogin">
                   다음 계정으로 계속하기
