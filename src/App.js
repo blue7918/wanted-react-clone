@@ -3,6 +3,7 @@ import './css/react-main-style.css';
 import './css/react-header.css';
 import './css/react-reset.css';
 import './css/react-footer.css';
+import './css/react-search.css';
 import Header from './component/basic-setting/Header';
 import SlidePicture from './component/first-page/SlidePicture';
 import CareerContentList from './component/first-page/1_CareerContentList/CareerContentList';

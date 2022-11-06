@@ -1,5 +1,10 @@
 import { useMemo } from 'react';
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+import {
+  GoogleMap,
+  useLoadScript,
+  Marker,
+  MarkerF,
+} from '@react-google-maps/api';
 
 export default function JobWorkPlaceMap() {
   const { isLoaded } = useLoadScript({
@@ -12,14 +17,14 @@ export default function JobWorkPlaceMap() {
 
 function Map() {
   const center = useMemo(() => ({ lat: 37.5102, lng: 127.04413 }), []);
-
+  const markerCenter = useMemo(() => ({ lat: 37.510091, lng: 127.044133 }), []);
   return (
     <GoogleMap
       zoom={18}
       center={center}
       mapContainerClassName="jobWorkPlaceMap"
     >
-      <Marker position={center} />
+      <MarkerF position={markerCenter} />
     </GoogleMap>
   );
 }

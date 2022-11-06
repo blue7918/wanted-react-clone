@@ -1,0 +1,132 @@
+.searchBarWrapper {
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.searchBarContainer {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.searchBarContainer > form {
+  position: relative;
+  width: 100%;
+  max-width: 1060px;
+}
+.searchBarSearchButton {
+  position: absolute;
+  top: 26px;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #939393;
+  width: 18px;
+  height: 18px;
+  margin: 0 16px 0 6px;
+}
+.searchBarContainer > form > input {
+  box-sizing: border-box;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  max-width: 1060px;
+  margin: 0;
+  padding: 0 36px 0 60px;
+  border: 1px solid #f2f4f7;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+  background-color: #f2f4f7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.searchBarContainer > form > input:focus {
+  border: 1px solid #36f;
+  color: #333;
+  background-color: #fff;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.recentSearchTagContainer {
+  padding: 50px 0 0;
+}
+.recentSearchTagTitle {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #333;
+}
+.recentSearchGo {
+  float: right;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #767676 !important;
+}
+.recentSearchGo > svg {
+  margin-left: 3px;
+}
+.searchTagContainer {
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 0 0;
+}
+.recentSearchTagTitleBox {
+  display: flex;
+  justify-content: space-between;
+}
+.recentSearchTagBox {
+  padding: 20px 0 50px;
+  display: flex;
+  flex-direction: row;
+}
+.recentSearchTagBox > li {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #333;
+}
+
+.recentSearchTagBox > li > button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+  margin-left: 10px;
+  padding: 0 26px;
+  border-radius: 25px;
+}
+
+.recentSearchTagBox > li > button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.searchTag1 {
+  background: #f0f8f8;
+  margin-left: 0 !important;
+}
+.searchTag2 {
+  background: #eeedf4;
+}
+.searchTag3 {
+  background: #e8edf3;
+}
+.searchTag4 {
+  background: #e9f4fb;
+}
+.searchTag5 {
+  background: #effbf3;
+}

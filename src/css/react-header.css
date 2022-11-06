@@ -59,7 +59,7 @@
   width: 100%;
   cursor: pointer;
 }
-.mainCategoryList li :hover {
+.mainCategoryList li:hover {
   background-color: rgba(238, 237, 237, 0.731);
   height: 100%;
   width: inherit;

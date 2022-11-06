@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from './modal/Modal';
 import Modal2 from './modal/Modal2';
 import { Link } from 'react-router-dom';
+import FilterNavbar from '../basic-setting/filter/FilterNavbar';
 
 function Header() {
   const [modalOpen, setModalOpen] = useState(0);
@@ -18,6 +19,13 @@ function Header() {
   function closeModal2() {
     setModalOpen(0);
   }
+
+  function openModal3() {
+    setModalOpen(3);
+  }
+  // function closeModal3() {
+  //   setModalOpen(0);
+  // }
 
   return (
     <>
@@ -132,6 +140,7 @@ function Header() {
                 type="button"
                 data-attribute-id="gnb"
                 data-gnb-kind="search"
+                onClick={openModal3}
               >
                 <svg
                   xmlns="https://www.w3.org/2000/svg"
@@ -175,6 +184,7 @@ function Header() {
         ></Modal>
         <Modal2 modalOpen={modalOpen} modalClose={closeModal2}></Modal2>
       </div>
+      <FilterNavbar modalOpen={modalOpen}></FilterNavbar>
     </>
   );
 }

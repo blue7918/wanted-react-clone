@@ -317,6 +317,10 @@
   background-position: 50%;
   background-size: cover;
   background-color: #f2f2f2;
+  transition: all 0.2s linear;
+}
+.featuredCompanyListItemImg:hover {
+  transform: scale(1.04);
 }
 .featuredCompanyLogo {
   background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.cc473dbf.jpg&amp;w=100&amp;q=75');
