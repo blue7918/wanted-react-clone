@@ -2,7 +2,7 @@ import React from 'react';
 
 function FilterNavbar(props) {
   const open = props.modalOpen;
-  //const close = props.modalClose;
+  const close = props.modalClose;
 
   const tagArray = [
     { id: 0, text: '#어린이집' },
@@ -34,6 +34,7 @@ function FilterNavbar(props) {
     { id: 26, text: '#사택' },
     { id: 27, text: '#반려동물' },
   ];
+
   const candidate = Array(28)
     .fill()
     .map((v, i) => i);
@@ -44,86 +45,70 @@ function FilterNavbar(props) {
       candidate.splice(Math.floor(Math.random() * candidate.length), 1)[0]
     );
   }
-
-  //const randomArray = shuffle.splice(0, 5);
+  let item = [0, 1, 2, 3, 4];
   return (
     <div className={open === 3 ? 'openModal' : ''}>
       {open === 3 ? (
-        <div className="searchBarWrapper">
-          <div className="searchBarContainer">
-            <form>
-              <button className="searchBarSearchButton" type="button">
-                <svg
-                  xmlns="https://www.w3.org/2000/svg"
-                  xmlnsXlink="https://www.w3.org/1999/xlink"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                >
-                  <defs>
-                    <path
-                      id="qt2dnsql4a"
-                      d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"
-                    ></path>
-                  </defs>
-                  <g fill="none" fillRule="evenodd">
-                    <use
-                      fill="#333"
-                      fillRule="nonzero"
-                      stroke="#333"
-                      strokeWidth=".3"
-                      xlinkHref="#qt2dnsql4a"
-                    ></use>
-                  </g>
-                </svg>
-              </button>
-              <input placeholder="#태그, 회사, 포지션 검색"></input>
-            </form>
-            <div className="recentSearchTagContainer">
-              <div className="recentSearchTagTitleBox">
-                <h4 className="recentSearchTagTitle">
-                  추천태그로 검색해보세요
-                </h4>
-                <div className="recentSearchGo">
-                  기업태그 홈 이동하기
-                  <svg width="12" height="12" viewBox="0 0 12 12">
-                    <path
-                      fill="currentColor"
-                      d="M4.22 9.72a.75.75 0 001.06 1.06l4.25-4.25a.75.75 0 000-1.06L5.28 1.22a.75.75 0 00-1.06 1.06L7.94 6 4.22 9.72z"
-                    ></path>
+        <>
+          <div className="searchBarWrapper">
+            <div className="searchBarContainer">
+              <form>
+                <button className="searchBarSearchButton" type="button">
+                  <svg
+                    xmlns="https://www.w3.org/2000/svg"
+                    xmlnsXlink="https://www.w3.org/1999/xlink"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                  >
+                    <defs>
+                      <path
+                        id="qt2dnsql4a"
+                        d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"
+                      ></path>
+                    </defs>
+                    <g fill="none" fillRule="evenodd">
+                      <use
+                        fill="#333"
+                        fillRule="nonzero"
+                        stroke="#333"
+                        strokeWidth=".3"
+                        xlinkHref="#qt2dnsql4a"
+                      ></use>
+                    </g>
                   </svg>
+                </button>
+                <input placeholder="#태그, 회사, 포지션 검색"></input>
+              </form>
+              <div className="recentSearchTagContainer">
+                <div className="recentSearchTagTitleBox">
+                  <h4 className="recentSearchTagTitle">
+                    추천태그로 검색해보세요
+                  </h4>
+                  <div className="recentSearchGo">
+                    기업태그 홈 이동하기
+                    <svg width="12" height="12" viewBox="0 0 12 12">
+                      <path
+                        fill="currentColor"
+                        d="M4.22 9.72a.75.75 0 001.06 1.06l4.25-4.25a.75.75 0 000-1.06L5.28 1.22a.75.75 0 00-1.06 1.06L7.94 6 4.22 9.72z"
+                      ></path>
+                    </svg>
+                  </div>
                 </div>
+                <ul className="recentSearchTagBox">
+                  {item.map((item) => (
+                    <li key={item}>
+                      <button className={`searchTag${item}`}>
+                        {tagArray[parseInt(shuffle[parseInt(item)])].text}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="recentSearchTagBox">
-                <li key={parseInt(shuffle[0])}>
-                  <button className="searchTag1">
-                    {tagArray[parseInt(shuffle[0])].text}
-                  </button>
-                </li>
-                <li key={parseInt(shuffle[1])}>
-                  <button className="searchTag2">
-                    {tagArray[parseInt(shuffle[1])].text}
-                  </button>
-                </li>
-                <li key={parseInt(shuffle[2])}>
-                  <button className="searchTag3">
-                    {tagArray[parseInt(shuffle[2])].text}
-                  </button>
-                </li>
-                <li key={parseInt(shuffle[3])}>
-                  <button className="searchTag4">
-                    {tagArray[parseInt(shuffle[3])].text}
-                  </button>
-                </li>
-                <li key={parseInt(shuffle[4])}>
-                  <button className="searchTag5">
-                    {tagArray[parseInt(shuffle[4])].text}
-                  </button>
-                </li>
-              </ul>
             </div>
           </div>
-        </div>
+          <div className="outsideSearchBar" onClick={close}></div>
+        </>
       ) : null}
     </div>
   );

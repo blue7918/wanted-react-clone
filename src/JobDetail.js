@@ -14,7 +14,7 @@ function JobDetail() {
         <h5 className="jobAssociatedTitle">이 포지션을 찾고 계셨나요?</h5>
         <JobDetailList />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

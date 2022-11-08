@@ -23,9 +23,9 @@ function Header() {
   function openModal3() {
     setModalOpen(3);
   }
-  // function closeModal3() {
-  //   setModalOpen(0);
-  // }
+  function closeModal3() {
+    setModalOpen(0);
+  }
 
   return (
     <>
@@ -41,11 +41,11 @@ function Header() {
                 <li>
                   <em>직군 전체</em>
                 </li>
-                <li>
-                  <Link to="/develop">
+                <Link to="/develop">
+                  <li>
                     <em>개발</em>
-                  </Link>
-                </li>
+                  </li>
+                </Link>
                 <li>
                   <em>경영·비즈니스</em>
                 </li>
@@ -184,7 +184,10 @@ function Header() {
         ></Modal>
         <Modal2 modalOpen={modalOpen} modalClose={closeModal2}></Modal2>
       </div>
-      <FilterNavbar modalOpen={modalOpen}></FilterNavbar>
+      <FilterNavbar
+        modalOpen={modalOpen}
+        modalClose={closeModal3}
+      ></FilterNavbar>
     </>
   );
 }

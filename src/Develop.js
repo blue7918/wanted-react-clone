@@ -18,7 +18,6 @@ function Develop() {
 
   function handleScroll() {
     setScrollY(window.pageYOffset);
-    console.log(ScrollY);
     if (ScrollY > 249) {
       // setScrollY(window.pageYOffset);
       setScrollActive(true);

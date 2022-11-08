@@ -2,7 +2,6 @@ import JobDetailImage from './JobDetailImage';
 import JobDetailHeader from './JobDetailHeader';
 import JobDetailRewardBox from './JobDetailRewardBox';
 
-
 function JobDetailBody() {
   return (
     <>
@@ -15,7 +14,6 @@ function JobDetailBody() {
         </div>
         <JobDetailRewardBox />
       </div>
-      
     </>
   );
 }

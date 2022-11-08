@@ -1,6 +1,10 @@
-import Items from '../../../json/JobDetail/JobDetailImageList.json';
+import { useParams } from 'react-router-dom';
+import JobDetailZip from '../../../json/JobDetail/JobDetailZip.json';
 
 function JobDetailImage() {
+  const { detailpage } = useParams();
+  const Items = JobDetailZip.Zip.filter((a) => a.ID === { detailpage });
+
   return (
     <div className="jobDetailImage">
       {Items.JobDetailImageItem.map((item) => (

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './css/react-main-style.css';
 import './css/react-header.css';
 import './css/react-reset.css';
@@ -26,6 +26,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/develop" element={<DevelopPage />} />
         <Route path="/jobdetail" element={<JobDetailPage />} />
+        <Route path="/develop/:detailpage" element={<JobDetailPage />} />
       </Routes>
     </BrowserRouter>
   );

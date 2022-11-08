@@ -114,19 +114,26 @@
   background: rgba(0, 0, 0, 0.05);
 }
 
-.searchTag1 {
+.searchTag0 {
   background: #f0f8f8;
   margin-left: 0 !important;
 }
-.searchTag2 {
+.searchTag1 {
   background: #eeedf4;
 }
-.searchTag3 {
+.searchTag2 {
   background: #e8edf3;
 }
-.searchTag4 {
+.searchTag3 {
   background: #e9f4fb;
 }
-.searchTag5 {
+.searchTag4 {
   background: #effbf3;
+}
+
+.outsideSearchBar {
+  height: calc(100vh - 270px);
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
 }
