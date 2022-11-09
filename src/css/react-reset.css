@@ -224,9 +224,17 @@ select {
   width: 90%;
   margin: 0 auto;
 }
+.set_width{
+  width: 1060px;
+  margin: 0 auto;
+}
 .set_mwidth {
   max-width: 66.25rem;
   margin: 0 auto;
+}
+.set_between{
+  display: flex;
+  justify-content: space-between;
 }
 .section_wrapper_9in1 {
   max-width: 1060px;

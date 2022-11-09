@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './css/react-main-style.css';
 import './css/react-header.css';
 import './css/react-reset.css';
@@ -18,6 +18,7 @@ import { FaRProject } from 'react-icons/fa';
 import MainPage from './Main';
 import DevelopPage from './Develop';
 import JobDetailPage from './JobDetail';
+import SearchPage from './component/search-page/SearchPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/develop" element={<DevelopPage />} />
         <Route path="/jobdetail" element={<JobDetailPage />} />
         <Route path="/develop/:detailpage" element={<JobDetailPage />} />
+        <Route path="/search" element={<SearchPage/>}/>
       </Routes>
     </BrowserRouter>
   );

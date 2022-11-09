@@ -5,8 +5,8 @@ function JobListContainer() {
   return (
     <ul className="jobListItemContainer">
       {Items.JobItems.map((item) => (
-        <Link to={`/develop/${item.id}`}>
-          <li className="jobListItem" key={item.id}>
+        <li className="jobListItem" key={item.id}>
+          <Link to={`/develop/${item.id}`}>
             <header style={{ backgroundImage: `url(${item.imgUrl})` }}>
               <button
                 className="bookmarkButton"
@@ -50,8 +50,8 @@ function JobListContainer() {
               </div>
               <div className="jobListItemReward">{item.reward}</div>
             </div>
-          </li>
-        </Link>
+          </Link>
+        </li>
       ))}
     </ul>
   );
