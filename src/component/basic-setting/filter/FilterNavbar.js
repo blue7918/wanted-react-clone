@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from 'react';
 
 function FilterNavbar(props) {
   const open = props.modalOpen;
@@ -40,12 +42,36 @@ function FilterNavbar(props) {
     .map((v, i) => i);
   const shuffle = [];
   // 1~28를 랜덤하게 섞기
-  while (candidate.length > 0) {
+  function test() {
+  while (candidate.length >0) {
     shuffle.push(
       candidate.splice(Math.floor(Math.random() * candidate.length), 1)[0]
     );
   }
+}
+
+  useEffect(() => {
+    shuffle.splice(0,5);
+    console.log(shuffle);
+  },[])
+  
   let item = [0, 1, 2, 3, 4];
+
+  const [searchedCompany, setSearchedCompany] = useState("");
+  const navigate = useNavigate();
+
+  const onChange = (e) => {
+    setSearchedCompany(e.target.value);
+    console.log(searchedCompany);
+  };
+  const enterPressed = (e) => {
+    if ((e.key === "Enter") & (searchedCompany.length > 0)) {
+      navigate("/search/" + searchedCompany);
+    } else if ((e.key === "Enter") & (searchedCompany.length === 0)) {
+      alert("키워드를 입력하세요.");
+    }
+  };
+
   return (
     <div className={open === 3 ? 'openModal' : ''}>
       {open === 3 ? (
@@ -78,7 +104,12 @@ function FilterNavbar(props) {
                     </g>
                   </svg>
                 </button>
-                <input placeholder="#태그, 회사, 포지션 검색"></input>
+                <input 
+                  placeholder="#태그, 회사, 포지션 검색"
+                  type = "search"
+                  value = {searchedCompany}
+                  onChange = {onChange}
+                  onKeyPress = {enterPressed}/>
               </form>
               <div className="recentSearchTagContainer">
                 <div className="recentSearchTagTitleBox">
@@ -96,7 +127,7 @@ function FilterNavbar(props) {
                   </div>
                 </div>
                 <ul className="recentSearchTagBox">
-                  {item.map((item) => (
+                  {shuffle.map((item) => (
                     <li key={item}>
                       <button className={`searchTag${item}`}>
                         {tagArray[parseInt(shuffle[parseInt(item)])].text}

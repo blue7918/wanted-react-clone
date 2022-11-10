@@ -5,6 +5,42 @@
       "logo": "https://static.wanted.co.kr/images/wdes/0_5.6298c833.jpg",
       "name":"비주얼신",
       "category":"IT, 컨텐츠"
+    },
+    {
+      "id": 1,
+      "logo": "https://static.wanted.co.kr/images/wdes/0_5.b473a5d4.jpg",
+      "name":"플레이디",
+      "category":"IT, 컨텐츠"
+    },
+    {
+      "id": 2,
+      "logo": "https://static.wanted.co.kr/images/wdes/0_5.cc9cd852.jpg",
+      "name":"뉴냅스",
+      "category":"IT, 컨텐츠"
+    },
+    {
+      "id": 3,
+      "logo": "https://static.wanted.co.kr/images/wdes/0_5.e0784705.jpg",
+      "name":"한국해양기상기술",
+      "category":"IT, 컨텐츠"
+    },
+    {
+      "id": 4,
+      "logo": "https://static.wanted.co.kr/images/wdes/0_5.a8b313b1.png",
+      "name":"룰루랩(lululab)",
+      "category":"IT, 컨텐츠"
+    },
+    {
+      "id": 5,
+      "logo": "https://static.wanted.co.kr/images/wdes/0_5.f1825dd5.jpg",
+      "name":"위시빈",
+      "category":"IT, 컨텐츠"
+    },
+    {
+      "id": 6,
+      "logo": "https://static.wanted.co.kr/images/wdes/0_5.0032366b.png",
+      "name":"티빙(TVING)",
+      "category":"IT, 컨텐츠"
     }
   ]
 }

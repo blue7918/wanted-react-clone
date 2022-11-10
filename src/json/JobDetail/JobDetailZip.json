@@ -38,42 +38,42 @@
       ],
       "TagItems": [
         {
-          "id": "0",
+          "id": 0,
           "tagLink": "",
           "tag": "#인원급성장"
         },
         {
-          "id": "1",
+          "id": 1,
           "tagLink": "",
           "tag": "#50명이하"
         },
         {
-          "id": "2",
+          "id": 2,
           "tagLink": "",
           "tag": "#설립3년이하"
         },
         {
-          "id": "3",
+          "id": 3,
           "tagLink": "",
           "tag": "#스톡옵션"
         },
         {
-          "id": "4",
+          "id": 4,
           "tagLink": "",
           "tag": "#스타트업"
         },
         {
-          "id": "5",
+          "id": 5,
           "tagLink": "",
           "tag": "#워크샵"
         },
         {
-          "id": "6",
+          "id": 6,
           "tagLink": "",
           "tag": "#건강검진"
         },
         {
-          "id": "7",
+          "id": 7,
           "tagLink": "",
           "tag": "#IT, 컨텐츠"
         }
@@ -135,6 +135,166 @@
           "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.713dfb6e.jpg",
           "name": "유섭",
           "content": "IT, 컨텐츠"
+        }
+      ],
+      "RewardItems": [
+        {
+          "id": 0,
+          "recommender": "500,000원",
+          "volunteer": "500,000원",
+          "img1": "https://static.wanted.co.kr/images/avatars/2377756/e0d33338.jpg",
+          "img2": "https://lh3.googleusercontent.com/a/ALm5wu0Z7lx949YRHMQw0eFfbQMfxSmyGpuNVEBqDsEDOQ=s96-c",
+          "img3": "https://k.kakaocdn.net/dn/ndfqS/btrKBrrJmUs/pkDgn02EKkhY1KKuPgl930/img_110x110.jpg"
+        }
+      ],
+      "PlaceAddress":[
+        {
+          "lat":37.5102,
+          "lng":127.04413
+        }
+      ]
+    },
+    {
+      "ID": 1,
+      "JobDetailImageItem": [
+        {
+          "id": 0,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4967%2Ff3fdqplgdur4eawt__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "플레이디 - 솔루션 개발자"
+        },
+        {
+          "id": 1,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4967%2Fpwbnwj5umv5gmexk__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "플레이디 - 솔루션 개발자"
+        },
+        {
+          "id": 2,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4967%2Fxypvkaws5qjpzjay__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "플레이디 - 솔루션 개발자"
+        },
+        {
+          "id": 3,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4967%2Fo9crpoxbxxv42u3g__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "플레이디 - 솔루션 개발자"
+        },
+        {
+          "id": 4,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4967%2Fd4jgozcmyzbwgwkt__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "플레이디 - 솔루션 개발자"
+        }
+      ],
+      "JobDetailCompany": [
+        {
+          "id": 0,
+          "title": "솔루션 개발자",
+          "company": "플레이디",
+          "color": "#00AEAD",
+          "level": "응답률 매우 높음",
+          "levelPopUp": "지원 후 응답받을 확률이 95% 이상입니다.",
+          "location1": "경기",
+          "location2": "한국"
+        }
+      ],
+      "TagItems": [
+        {
+          "id": 0,
+          "tagLink": "",
+          "tag": "#인원급성장"
+        },
+        {
+          "id": 1,
+          "tagLink": "",
+          "tag": "#301~1,000명"
+        },
+        {
+          "id": 2,
+          "tagLink": "",
+          "tag": "#설립10년이상"
+        },
+        {
+          "id": 3,
+          "tagLink": "",
+          "tag": "#성과급"
+        },
+        {
+          "id": 4,
+          "tagLink": "",
+          "tag": "#음료"
+        },
+        {
+          "id": 5,
+          "tagLink": "",
+          "tag": "#간식"
+        },
+        {
+          "id": 6,
+          "tagLink": "",
+          "tag": "#사내카페"
+        },
+        {
+          "id": 7,
+          "tagLink": "",
+          "tag": "#휴개실"
+        },
+        {
+          "id": 8,
+          "tagLink": "",
+          "tag": "#IT, 컨텐츠"
+        }
+      ],
+      "JobSKillItems": [
+        {
+          "id": "0",
+          "skill": "Linux"
+        },
+        {
+          "id": "1",
+          "skill": "Cisco"
+        },
+        {
+          "id": "2",
+          "skill": "가상화"
+        },
+        {
+          "id": "3",
+          "skill": "Window 서버"
+        },
+        {
+          "id": "4",
+          "skill": "시스템 관리"
+        },
+        {
+          "id": "5",
+          "skill": "CCNA"
+        },
+        {
+          "id": "6",
+          "skill": "CCNP"
+        },
+        {
+          "id": "7",
+          "skill": "네트워크 운영"
+        },
+        {
+          "id": "8",
+          "skill": "RedHay"
+        },
+        {
+          "id": "9",
+          "skill": "서버 관리"
+        },
+        {
+          "id": "10",
+          "skill": "백업 솔루션"
+        }
+      ],
+      "WorkPlaceItems": [
+        {
+          "id": 0,
+          "deadline": "마감일",
+          "deadlineText": "2022.11.11",
+          "place": "근무지역",
+          "placeText": "경기도 성남시 분당구 황새울로 359번길 11, 5층"
         }
       ],
       "RewardItems": [

@@ -1,4 +1,4 @@
-//import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import '../../css/react-search.css';
 import '../../css/react-reset.css';
@@ -9,16 +9,25 @@ import Items from '../../json/JobListItem.json';
 
 function SearchPage() {
   const [SearchedItems, SetSearchedItems] = useState([]);
+  const { searchedCompany } = useParams();
+  const [FilteredCompany, SetFilteredCompany] = useState([]);
 
   useEffect(() => {
-    SetSearchedItems(Items.JobItems.filter((a) => a.name === '비주얼신'));
+    SetSearchedItems(Items.JobItems.filter((a) => a.name == searchedCompany));
   }, []);
+  useEffect(() => {
+    SetFilteredCompany(
+      Company.CompanyList.filter((b) => b.name.includes(searchedCompany))
+    );
+  }, []);
+  console.log(FilteredCompany);
+
   return (
     <>
       <Header />
       <div className="paddingHeader" />
       <div className="searchInput">
-        <div className="searchInputTag">비주얼신</div>
+        <div className="searchInputTag">{searchedCompany}</div>
       </div>
       <div className="background">
         <div className="searchedCompany set_mwidth ">
@@ -44,8 +53,8 @@ function SearchPage() {
               </button>
             </div>
           </div>
-          <ul>
-            {Company.CompanyList.map((item) => (
+          <ul className="companyList">
+            {FilteredCompany.map((item) => (
               <li key={item.id} className="companyListItem">
                 <div className="companyListLeft">
                   <img src={item.logo} className="logoImg"></img>

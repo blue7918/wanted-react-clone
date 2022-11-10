@@ -7,15 +7,27 @@ function JobDetailImage() {
   const [Items, setItems] = useState([]);
 
   useEffect(() => {
-    setItems(JobDetailZip.Zip.filter((a) => a.ID === { detailpage }));
-    console.log('Items: ' + Items);
+    setItems(JobDetailZip.Zip.filter((a) => a.ID == detailpage));
   }, []);
+
+  // useEffect(() => {
+  //   console.log(Items);
+  // }, [Items]);
+
+  // console.log(
+  //   JobDetailZip.Zip.map((a) =>
+  //     a.JobDetailImageItem.filter((e) => e.id == detailpage)
+  //   )
+  // );
   console.log('Items: ' + Items);
   return (
     <div className="jobDetailImage">
-      {/* {Items.JobDetailImageItem.map((item) => (
-        <img key={item.id} src={item.imgSrc} alt={item.imgAlt} />
-      ))} */}
+      {Items[0] &&
+        Items[0].JobDetailImageItem.map((item) => (
+          <img key={item.id} src={item.imgSrc} alt={item.imgAlt} />
+        ))}
+
+
     </div>
   );
 }

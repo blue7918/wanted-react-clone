@@ -28,7 +28,8 @@ function App() {
         <Route path="/develop" element={<DevelopPage />} />
         <Route path="/jobdetail" element={<JobDetailPage />} />
         <Route path="/develop/:detailpage" element={<JobDetailPage />} />
-        <Route path="/search" element={<SearchPage/>}/>
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/search/:searchedCompany" element={<SearchPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -204,8 +204,13 @@
   background-color: #fff;
   color: #333;
 }
+.companyList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .companyListItem {
-  width: calc(50% - 20px);
+  width: calc(50% - 60px);
   margin: 10px;
   display: flex;
   flex-direction: row;
@@ -264,7 +269,7 @@
   margin-bottom: 8px;
   color: #333;
 }
-.searchedPosition > h2 >span {
+.searchedPosition > h2 > span {
   margin-left: 10px;
   font-weight: 400;
 }
