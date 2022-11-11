@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 function FilterNavbar(props) {
@@ -43,16 +43,24 @@ function FilterNavbar(props) {
   const shuffle = [];
 
   // 1~28를 랜덤하게 섞기
-  while (candidate.length >0) {
+  while (candidate.length > 0) {
     shuffle.push(
       candidate.splice(Math.floor(Math.random() * candidate.length), 1)[0]
     );
   }
-
-  
   let item = [0, 1, 2, 3, 4];
 
-  const [searchedCompany, setSearchedCompany] = useState("");
+  const [shuffledTags, setShuffledTags] = useState({});
+  console.log('ini: '+shuffledTags);
+  useEffect(() => {
+    setShuffledTags(shuffledTags=>[...shuffledTags,shuffle]);
+    console.log('1: '+shuffledTags);
+  }, []);
+
+  console.log('2: '+shuffledTags[0]);
+  console.log('3: '+shuffledTags);
+
+  const [searchedCompany, setSearchedCompany] = useState('');
   const navigate = useNavigate();
 
   const onChange = (e) => {
@@ -60,13 +68,13 @@ function FilterNavbar(props) {
     console.log(searchedCompany);
   };
   const enterPressed = (e) => {
-    if ((e.key === "Enter") & (searchedCompany.length > 0)) {
-      navigate("/search/" + searchedCompany);
-    } else if ((e.key === "Enter") & (searchedCompany.length === 0)) {
-      alert("키워드를 입력하세요.");
+    if ((e.key === 'Enter') & (searchedCompany.length > 0)) {
+      navigate('/search/' + searchedCompany);
+    } else if ((e.key === 'Enter') & (searchedCompany.length === 0)) {
+      alert('키워드를 입력해주세요!');
     }
   };
-
+  console.log('item: '+item);
   return (
     <div className={open === 3 ? 'openModal' : ''}>
       {open === 3 ? (
@@ -99,12 +107,13 @@ function FilterNavbar(props) {
                     </g>
                   </svg>
                 </button>
-                <input 
+                <input
                   placeholder="#태그, 회사, 포지션 검색"
-                  type = "search"
-                  value = {searchedCompany}
-                  onChange = {onChange}
-                  onKeyPress = {enterPressed}/>
+                  type="search"
+                  value={searchedCompany}
+                  onChange={onChange}
+                  onKeyPress={enterPressed}
+                />
               </form>
               <div className="recentSearchTagContainer">
                 <div className="recentSearchTagTitleBox">
@@ -122,10 +131,17 @@ function FilterNavbar(props) {
                   </div>
                 </div>
                 <ul className="recentSearchTagBox">
-                  {item.map((item) => (
+                  {/* {item.map((item) => (
                     <li key={item}>
                       <button className={`searchTag${item}`}>
                         {tagArray[parseInt(shuffle[parseInt(item)])].text}
+                      </button>
+                    </li>
+                  ))} */}
+                  {item.map((item) => (
+                    <li key={item}>
+                      <button className={`searchTag${item}`}>
+                        {tagArray[parseInt(shuffledTags[parseInt(item)])].text}
                       </button>
                     </li>
                   ))}
