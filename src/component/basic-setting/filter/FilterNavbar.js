@@ -41,19 +41,14 @@ function FilterNavbar(props) {
     .fill()
     .map((v, i) => i);
   const shuffle = [];
+
   // 1~28를 랜덤하게 섞기
-  function test() {
   while (candidate.length >0) {
     shuffle.push(
       candidate.splice(Math.floor(Math.random() * candidate.length), 1)[0]
     );
   }
-}
 
-  useEffect(() => {
-    shuffle.splice(0,5);
-    console.log(shuffle);
-  },[])
   
   let item = [0, 1, 2, 3, 4];
 
@@ -127,7 +122,7 @@ function FilterNavbar(props) {
                   </div>
                 </div>
                 <ul className="recentSearchTagBox">
-                  {shuffle.map((item) => (
+                  {item.map((item) => (
                     <li key={item}>
                       <button className={`searchTag${item}`}>
                         {tagArray[parseInt(shuffle[parseInt(item)])].text}

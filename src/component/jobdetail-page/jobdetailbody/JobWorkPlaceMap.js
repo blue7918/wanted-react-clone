@@ -1,12 +1,12 @@
 import { useMemo, useState } from 'react';
 import { GoogleMap, useLoadScript, MarkerF } from '@react-google-maps/api';
-import JobDetailZip from '../../../json/JobDetail/JobDetailZip.json';
+//import JobDetailZip from '../../../json/JobDetail/JobDetailZip.json';
 
 export default function JobWorkPlaceMap() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyALbiucPQ_IVq0E9d0kK_Z9UfyIhyUWDQE',
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
+    version: '3.47',
   });
-
   if (!isLoaded) return <div>Loading...</div>;
   return <Map />;
 }

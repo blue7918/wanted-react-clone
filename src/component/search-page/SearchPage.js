@@ -13,14 +13,18 @@ function SearchPage() {
   const [FilteredCompany, SetFilteredCompany] = useState([]);
 
   useEffect(() => {
-    SetSearchedItems(Items.JobItems.filter((a) => a.name == searchedCompany));
-  }, []);
-  useEffect(() => {
     SetFilteredCompany(
       Company.CompanyList.filter((b) => b.name.includes(searchedCompany))
     );
-  }, []);
+  }, [searchedCompany]);
+  console.log(searchedCompany);
   console.log(FilteredCompany);
+  console.log(FilteredCompany[0].name);
+  useEffect(() => {
+    SetSearchedItems(
+      Items.JobItems.filter((a) => a.name == FilteredCompany[0].name)
+    );
+  }, [searchedCompany]);
 
   return (
     <>
