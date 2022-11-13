@@ -42,23 +42,18 @@ function FilterNavbar(props) {
     .map((v, i) => i);
   const shuffle = [];
 
-  // 1~28를 랜덤하게 섞기
-  while (candidate.length > 0) {
-    shuffle.push(
-      candidate.splice(Math.floor(Math.random() * candidate.length), 1)[0]
-    );
-  }
   let item = [0, 1, 2, 3, 4];
-
-  const [shuffledTags, setShuffledTags] = useState({});
-  console.log('ini: '+shuffledTags);
+  const [shuffledTags, setShuffledTags] = useState([]);
+  
+  // component did mount action
   useEffect(() => {
-    setShuffledTags(shuffledTags=>[...shuffledTags,shuffle]);
-    console.log('1: '+shuffledTags);
+    while (candidate.length > 0) {
+      shuffle.push(
+        candidate.splice(Math.floor(Math.random() * candidate.length), 1)[0]
+      );
+    }
+    setShuffledTags(shuffledTags.concat(shuffle));
   }, []);
-
-  console.log('2: '+shuffledTags[0]);
-  console.log('3: '+shuffledTags);
 
   const [searchedCompany, setSearchedCompany] = useState('');
   const navigate = useNavigate();
@@ -74,7 +69,7 @@ function FilterNavbar(props) {
       alert('키워드를 입력해주세요!');
     }
   };
-  console.log('item: '+item);
+
   return (
     <div className={open === 3 ? 'openModal' : ''}>
       {open === 3 ? (
@@ -131,17 +126,10 @@ function FilterNavbar(props) {
                   </div>
                 </div>
                 <ul className="recentSearchTagBox">
-                  {/* {item.map((item) => (
-                    <li key={item}>
-                      <button className={`searchTag${item}`}>
-                        {tagArray[parseInt(shuffle[parseInt(item)])].text}
-                      </button>
-                    </li>
-                  ))} */}
-                  {item.map((item) => (
-                    <li key={item}>
-                      <button className={`searchTag${item}`}>
-                        {tagArray[parseInt(shuffledTags[parseInt(item)])].text}
+                  {item.map((_item) => (
+                    <li key={_item}>
+                      <button className={`searchTag${_item}`}>
+                        {tagArray[parseInt(shuffledTags[parseInt(_item)])].text}
                       </button>
                     </li>
                   ))}

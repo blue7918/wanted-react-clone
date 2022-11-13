@@ -1,15 +1,25 @@
 import JobCompany from './JobCompany';
 import JobDetailTag from './JobDetailTag';
-import Items from '../../../json/JobDetail/JobDetailCompany.json';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import JobDetailZip from '../../../json/JobDetail/JobDetailZip.json';
 // import JobDescription from './JobDescription';
 import JobSKills from './JobSkills';
 import JobWorkPlace from './JobWorkPlace';
 import JobDetailCompanyInfo from './JobDetailCompanyInfo';
 
 function JobDetailHeader() {
+  const { detailpage } = useParams();
+  const [Items, setItems] = useState([]);
+
+  useEffect(() => {
+    setItems(JobDetailZip.Zip.filter((a) => a.ID == detailpage));
+  }, []);
+
   return (
     <section className="jobDetailHeader">
-      {Items.JobDetailCompany.map((item) => (
+      {Items[0] &&
+        Items[0].JobDetailCompany.map((item) => (
         <h2 key={item.id}>{item.title}</h2>
       ))}
       <JobCompany />
