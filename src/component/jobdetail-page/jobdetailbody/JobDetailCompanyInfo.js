@@ -1,9 +1,19 @@
-import Items from '../../../json/JobDetail/CompanyInfoList.json';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import JobDetailZip from '../../../json/JobDetail/JobDetailZip.json';
 
 function JobDetailCompanyInfo() {
+  const { detailpage } = useParams();
+  const [Items, setItems] = useState([]);
+
+  useEffect(() => {
+    setItems(JobDetailZip.Zip.filter((a) => a.ID == detailpage));
+  }, []);
+
   return (
     <>
-      {Items.CompanyInfoItems.map((item) => (
+      {Items[0] &&
+        Items[0].CompanyInfoItems.map((item) => (
         <div key={item.id}>
           <section className="jobCompanyInfo">
             <button className="jobCompanyLeft">

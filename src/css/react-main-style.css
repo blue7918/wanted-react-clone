@@ -5,6 +5,27 @@
   margin-top: 75px;
   text-align: center;
 }
+.topArrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 120px;
+  width: 30px;
+  height: 60px;
+  opacity: .5;
+  border-radius: 15px;
+  background-color: #fff;
+  font-size: 16px;
+  z-index: 5;
+}
+.topNextArrow{
+  right: 250px;
+}
+.topPrevArrow{
+  left: 200px;
+}
+
 /* 나에게 필요한 커리어 인사이트 부분 */
 .CareerContentList {
   padding: 60px 0px;

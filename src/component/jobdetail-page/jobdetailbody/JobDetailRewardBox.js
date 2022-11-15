@@ -1,10 +1,20 @@
-import Items from '../../../json/JobDetail/RewardList.json';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import JobDetailZip from '../../../json/JobDetail/JobDetailZip.json';
 import { FaHeart } from 'react-icons/fa';
 
 function JobDetailRewardBox() {
+  const { detailpage } = useParams();
+  const [Items, setItems] = useState([]);
+
+  useEffect(() => {
+    setItems(JobDetailZip.Zip.filter((a) => a.ID == detailpage));
+  }, []);
+
   return (
     <>
-      {Items.RewardItems.map((item) => (
+      {Items[0] &&
+        Items[0].RewardItems.map((item) => (
         <div className="jobProcessContainer" key={item.id}>
           <div className="jobProcessRewardContainer">
             <h3>채용보상금</h3>

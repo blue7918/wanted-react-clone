@@ -15,16 +15,11 @@ function SearchPage() {
   useEffect(() => {
     SetFilteredCompany(
       Company.CompanyList.filter((b) => b.name.includes(searchedCompany))
-    );
-  }, [searchedCompany]);
-  console.log(searchedCompany);
-  console.log(FilteredCompany);
-  console.log(FilteredCompany[0].name);
-  useEffect(() => {
+      );
     SetSearchedItems(
-      Items.JobItems.filter((a) => a.name == FilteredCompany[0].name)
+      Items.JobItems.filter((a) => a.name.includes(searchedCompany) || a.position.includes(searchedCompany))
     );
-  }, [searchedCompany]);
+  }, []);
 
   return (
     <>
@@ -38,7 +33,7 @@ function SearchPage() {
           <div className="set_between">
             <h2 className="searchedCompanyLabel">
               회사
-              <span>14</span>
+              <span>{FilteredCompany.length}</span>
             </h2>
             <div className="setArrows">
               <button className="arrowL set_center">
@@ -75,7 +70,7 @@ function SearchPage() {
         <div className="searchedPosition set_mwidth">
           <h2>
             포지션
-            <span>5</span>
+            <span>{SearchedItems.length}</span>
           </h2>
           <PopUpPart />
           <ul className="jobListItemContainer">

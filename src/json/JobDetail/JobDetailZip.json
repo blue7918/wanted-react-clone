@@ -126,7 +126,9 @@
           "deadline": "마감일",
           "deadlineText": "2022.11.30",
           "place": "근무지역",
-          "placeText": "서울 강남구 선릉로 578 태정빌딩 8층"
+          "placeText": "서울 강남구 선릉로 578 태정빌딩 8층",
+          "lat": 37.510091,
+          "lng": 127.04413
         }
       ],
       "CompanyInfoItems": [
@@ -147,10 +149,10 @@
           "img3": "https://k.kakaocdn.net/dn/ndfqS/btrKBrrJmUs/pkDgn02EKkhY1KKuPgl930/img_110x110.jpg"
         }
       ],
-      "PlaceAddress":[
+      "PlaceAddress": [
         {
-          "lat":37.5102,
-          "lng":127.04413
+          "lat": 37.5102,
+          "lng": 127.04413
         }
       ]
     },
@@ -294,7 +296,17 @@
           "deadline": "마감일",
           "deadlineText": "2022.11.11",
           "place": "근무지역",
-          "placeText": "경기도 성남시 분당구 황새울로 359번길 11, 5층"
+          "placeText": "경기도 성남시 분당구 황새울로 359번길 11, 5층",
+          "lat": 37.38808,
+          "lng": 127.1232
+        }
+      ],
+      "CompanyInfoItems": [
+        {
+          "id": 0,
+          "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.b473a5d4.jpg",
+          "name": "플레이디",
+          "content": "IT, 컨텐츠"
         }
       ],
       "RewardItems": [
