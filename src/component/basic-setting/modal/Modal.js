@@ -8,7 +8,6 @@ const User = {
 function Modal(props) {
   const open = props.modalOpen;
   const close = props.modalClose;
-
   const [email, setEmail] = useState('');
   const [emailValid, setEmailValid] = useState(false);
   const [notAllow, setNotAllow] = useState(true);
@@ -33,6 +32,7 @@ function Modal(props) {
   };
   const onClickConfirmButton = () => {
     if (email === User.email) {
+      return true;
     } else {
     }
   };
@@ -88,14 +88,10 @@ function Modal(props) {
                 </div>
                 <button
                   id="input_panel_button"
-                  onClick={onClickConfirmButton}
+                  onClick={onClickConfirmButton && props.openModal2}
                   disabled={notAllow}
                 >
-                  <input
-                    type="submit"
-                    value="이메일로 계속하기"
-                    onClick={props.openModal2}
-                  />
+                  <input type="submit" value="이메일로 계속하기" />
                 </button>
                 <div className="InputPanelOrSocial">or</div>
                 <div className="InputPanelSocialLogin">

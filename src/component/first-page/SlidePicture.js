@@ -51,7 +51,7 @@ function SlidePicture() {
 
   const Container = styled.div`
     /* margin-left : calc((100vw - 1060px)/2);
-  margin-right : calc((100vw - 1060px)/2); */
+    margin-right : calc((100vw - 1060px)/2); */
     margin-top: 80px;
     width: 100vw;
     overflow: hidden;
