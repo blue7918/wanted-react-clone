@@ -1,8 +1,52 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react'
+import styled from 'styled-components';
 
+// const User = {
+//   pw: 'test2323@@@'
+// }
 function Modal2(props) {
   const open = props.modalOpen;
   const close = props.modalClose;
+
+  const [pw, setPw] = useState('');
+  const [confirmPw, setConfirmPw] = useState('');
+  const [pwValid, setPwValid] = useState(false);
+  const [pwValid2, setPwValid2] = useState(false);
+  const [notAllow, setNotAllow] = useState(true);
+
+  // const FirstPW = styled.input`
+  // border: 0.063rem solid #e1e2e3;
+  // `;
+  
+  const handlePw = (e) => {
+    setPw(e.target.value);
+    const regex =
+    /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+])(?!.*[^a-zA-z0-9$`~!@$!%*#^?&\\(\\)\-_=+]).{8,20}$/;
+    if (regex.test(e.target.value)) { 
+      setPwValid(true);
+      return;
+    } else {
+      setPwValid(false);
+    }
+    console.log('1'+pwValid);
+  }; console.log(setPw)
+
+  const handlePw2 = (e) => {
+    setConfirmPw(e.target.value);
+    if((pw === e.target.value)){
+      setPwValid2(true);
+    }else{
+      setPwValid2(false);
+    }
+    console.log('2'+pwValid2);
+  }
+  console.log('2'+pwValid2);
+  // const onClickConfirmButton = () => {
+  //   if( pw === User.pw) {
+  //     return true;
+  //   } else {
+  //   }
+  // }
 
   const [Selected, setSelected] = useState('');
   const handleSelect = (e) => {
@@ -41,7 +85,16 @@ function Modal2(props) {
       setCheckItems([]);
     }
   };
-
+  console.log('aaa:  '+checkItems.length);
+  
+  useEffect(() => {
+    if(pwValid===true&& pwValid2===true&&checkItems.length===3) {
+      setNotAllow(false);
+      return;
+    }
+    setNotAllow(true);
+  }, [pwValid,pwValid2]);
+  console.log('allow: '+notAllow);
   return (
     <div className={open === 2 ? ' openModal' : ''}>
       {open === 2 ? (
@@ -214,14 +267,26 @@ function Modal2(props) {
                   type="password"
                   placeholder="비밀번호를 입력해주세요."
                   name="password"
+                  onChange={handlePw}
                   defaultValue=""
                 />
+                <div className="errorMessageWrap">
+                  {!pwValid && pw.length > 0 && (
+                    <div>올바르지 않은 비밀번호입니다.</div>
+                  )}
+                </div>
                 <input
                   type="password"
                   placeholder="비밀번호를 다시 한번 입력해주세요."
                   name="passwordConfirm"
+                  onChange={handlePw2}
                   defaultValue=""
                 />
+                <div className="errorMessageWrap">
+                  { !(pw === confirmPw)&& confirmPw.length > 0 && (
+                    <div>비밀번호가 서로 일치하지 않습니다.</div>
+                  )}
+                </div>
                 <p className="passwordDetail">
                   영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상
                   16자 이하로 입력해주세요.
@@ -266,7 +331,8 @@ function Modal2(props) {
               </form>
             </div>
             <div className="set_center">
-              <button id="signinmal_second_signin_button">
+              <button id="signinmal_second_signin_button" 
+              disabled={notAllow}>
                 <span>가입하기</span>
               </button>
             </div>
