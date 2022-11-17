@@ -20,10 +20,10 @@
   z-index: 5;
 }
 .topNextArrow{
-  right: 250px;
+  right: 260px;
 }
 .topPrevArrow{
-  left: 200px;
+  left: 233px;
 }
 
 /* 나에게 필요한 커리어 인사이트 부분 */
@@ -1110,13 +1110,12 @@ input[name='check'] {
   font-size: 16px;
   margin: 15px 0 20px 0;
   border: none;
-  color: #ccc;
+  color: white;
   background-color: #36f;
-  background-color: #f2f4f7;
   cursor: pointer;
 }
 
 #signinmal_second_signin_button:disabled {
   background-color: #f2f4f7;
-  color: white;
+  color: #ccc;
 }

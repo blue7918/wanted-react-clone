@@ -39,7 +39,7 @@ function SlidePicture() {
     slidesToScroll: 1,
     autoplay: true,
     centerMode: true,
-    centerPadding: '300px',
+    centerPadding: '310px',
     nextArrow: <Next />,
     prevArrow: <Prev />,
   };

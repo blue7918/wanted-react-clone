@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import styled from 'styled-components';
+
 
 // const User = {
 //   pw: 'test2323@@@'
@@ -14,9 +14,6 @@ function Modal2(props) {
   const [pwValid2, setPwValid2] = useState(false);
   const [notAllow, setNotAllow] = useState(true);
 
-  // const FirstPW = styled.input`
-  // border: 0.063rem solid #e1e2e3;
-  // `;
   
   const handlePw = (e) => {
     setPw(e.target.value);
@@ -88,12 +85,13 @@ function Modal2(props) {
   console.log('aaa:  '+checkItems.length);
   
   useEffect(() => {
-    if(pwValid===true&& pwValid2===true&&checkItems.length===3) {
+    if(pwValid===true&& pwValid2===true && checkItems.length===3) {
       setNotAllow(false);
       return;
     }
     setNotAllow(true);
-  }, [pwValid,pwValid2]);
+  }, [pwValid,pwValid2,checkItems]);
+
   console.log('allow: '+notAllow);
   return (
     <div className={open === 2 ? ' openModal' : ''}>
@@ -332,6 +330,7 @@ function Modal2(props) {
             </div>
             <div className="set_center">
               <button id="signinmal_second_signin_button" 
+              onClick={props.openModal5}
               disabled={notAllow}>
                 <span>가입하기</span>
               </button>

@@ -154,14 +154,46 @@
   list-style: none;
   align-items: center;
 }
-.setPlace {
+#setPlace {
   display: flex;
   align-items: center;
 }
+#loginheader {
+  display: flex;
+  align-items: center;
+}
+
 .SearchButton {
   background: none;
   border: none;
   margin-top: 5px;
+}
+.loginSearch{
+  padding: 0 .625rem;
+}
+.loginNotiButon {
+  margin-top: 5px;
+  padding: 0 .625rem;
+  margin-right: .625rem;
+}
+.profileButtonBox{
+  margin-right: 1rem;
+  
+}
+.profileButton{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: .0625rem solid #e1e2e3;
+  background-color: #fff;
+  overflow: hidden;
+}
+.profileButton > img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-position: 50%;
+  background-size: cover;
 }
 #signup_button {
   margin: 0;

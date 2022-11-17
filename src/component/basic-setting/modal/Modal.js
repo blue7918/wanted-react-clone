@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-const User = {
-  email: 'test@example.com',
-  // pw: 'test2323@@@'
-};
 
 function Modal(props) {
   const open = props.modalOpen;
@@ -28,12 +24,6 @@ function Modal(props) {
       setEmailValid(true);
     } else {
       setEmailValid(false);
-    }
-  };
-  const onClickConfirmButton = () => {
-    if (email === User.email) {
-      return true;
-    } else {
     }
   };
 
@@ -88,7 +78,7 @@ function Modal(props) {
                 </div>
                 <button
                   id="input_panel_button"
-                  onClick={onClickConfirmButton && props.openModal2}
+                  onClick={props.openModal2}
                   disabled={notAllow}
                 >
                   <input type="submit" value="이메일로 계속하기" />
