@@ -91,7 +91,11 @@ function Modal2(props) {
     }
     setNotAllow(true);
   }, [pwValid,pwValid2,checkItems]);
-
+  useEffect(() => {
+    if( open === 1){
+      setCheckItems([]);
+    }
+  },[open])
   console.log('allow: '+notAllow);
   return (
     <div className={open === 2 ? ' openModal' : ''}>

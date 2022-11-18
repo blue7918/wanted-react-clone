@@ -26,7 +26,11 @@ function Modal(props) {
       setEmailValid(false);
     }
   };
-
+  useEffect(() => {
+    if(open === 0 ){
+      setEmail('');
+    }
+  },[open])
   return (
     <div className={open === 1 ? ' openModal' : ''}>
       {open === 1 ? (
