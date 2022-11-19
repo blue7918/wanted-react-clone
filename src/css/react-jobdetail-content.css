@@ -303,6 +303,20 @@
 .jobWarningContent svg {
   color: #333;
 }
+.jobWarningBody {
+  font-size: 13px;
+  line-height: 24px;
+  color: #666;
+}
+.accordionWrapper {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #f3f5f8 !important;
+}
+.accordionBody {
+  padding: 13px 30px 30px;
+  border-top: 1px solid #ececec;
+}
 
 .jobProcessContainer {
   margin-left: 2rem;

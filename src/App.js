@@ -19,6 +19,7 @@ import MainPage from './Main';
 import DevelopPage from './Develop';
 import JobDetailPage from './JobDetail';
 import SearchPage from './component/search-page/SearchPage';
+import { Accordion} from 'bootstrap';
 
 function App() {
   return (

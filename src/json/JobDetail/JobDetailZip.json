@@ -134,8 +134,8 @@
       "CompanyInfoItems": [
         {
           "id": 0,
-          "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.713dfb6e.jpg",
-          "name": "유섭",
+          "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.6298c833.jpg",
+          "name": "비주얼신",
           "content": "IT, 컨텐츠"
         }
       ],
@@ -317,6 +317,859 @@
           "img1": "https://static.wanted.co.kr/images/avatars/2377756/e0d33338.jpg",
           "img2": "https://lh3.googleusercontent.com/a/ALm5wu0Z7lx949YRHMQw0eFfbQMfxSmyGpuNVEBqDsEDOQ=s96-c",
           "img3": "https://k.kakaocdn.net/dn/ndfqS/btrKBrrJmUs/pkDgn02EKkhY1KKuPgl930/img_110x110.jpg"
+        }
+      ]
+    },
+    {
+      "ID": 2,
+      "JobDetailImageItem": [
+        {
+          "id": 0,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F12150%2Fdixeflrxdrmosnc2__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "뉴냅스 - Unity 개발자"
+        },
+        {
+          "id": 1,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F12150%2Fyyywgcsvvtoj4hen__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "뉴냅스 - Unity 개발자"
+        }
+      ],
+      "JobDetailCompany": [
+        {
+          "id": 0,
+          "title": "Unity 개발자",
+          "company": "뉴냅스",
+          "color": "#36f",
+          "level": "응답률 높음",
+          "levelPopUp": "지원 후 응답받을 확률이 90% 이상입니다.",
+          "location1": "서울",
+          "location2": "한국"
+        }
+      ],
+      "TagItems": [
+        {
+          "id": 0,
+          "tagLink": "",
+          "tag": "#인원급성장"
+        },
+        {
+          "id": 1,
+          "tagLink": "",
+          "tag": "#50명이하"
+        },
+        {
+          "id": 2,
+          "tagLink": "",
+          "tag": "#설립4~9년"
+        },
+        {
+          "id": 3,
+          "tagLink": "",
+          "tag": "#수평적조직"
+        },
+        {
+          "id": 4,
+          "tagLink": "",
+          "tag": "#워크샵"
+        },
+        {
+          "id": 5,
+          "tagLink": "",
+          "tag": "#음료"
+        },
+        {
+          "id": 6,
+          "tagLink": "",
+          "tag": "#커피"
+        },
+        {
+          "id": 7,
+          "tagLink": "",
+          "tag": "#간식"
+        },
+        {
+          "id": 8,
+          "tagLink": "",
+          "tag": "#IT, 컨텐츠"
+        }
+      ],
+      "JobSKillItems": [
+        {
+          "id": "0",
+          "skill": "VueJS"
+        },
+        {
+          "id": "1",
+          "skill": "AWS"
+        },
+        {
+          "id": "2",
+          "skill": "HTML5"
+        },
+        {
+          "id": "3",
+          "skill": "CSS3"
+        },
+        {
+          "id": "4",
+          "skill": "SASS"
+        },
+        {
+          "id": "5",
+          "skill": "Figma"
+        }
+      ],
+      "WorkPlaceItems": [
+        {
+          "id": 0,
+          "deadline": "마감일",
+          "deadlineText": "상시",
+          "place": "근무지역",
+          "placeText": "송파구 올림픽로43길 88, 아산생명과학연구원 융합연구관 11층 1호",
+          "lat": 37.5269,
+          "lng": 127.1083
+        }
+      ],
+      "CompanyInfoItems": [
+        {
+          "id": 0,
+          "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.cc9cd852.jpg",
+          "name": "뉴냅스",
+          "content": "IT, 컨텐츠"
+        }
+      ],
+      "RewardItems": [
+        {
+          "id": 0,
+          "recommender": "500,000원",
+          "volunteer": "500,000원",
+          "img1": "https://static.wanted.co.kr/images/avatars/2377756/e0d33338.jpg",
+          "img2": "https://lh3.googleusercontent.com/a/ALm5wu0Z7lx949YRHMQw0eFfbQMfxSmyGpuNVEBqDsEDOQ=s96-c",
+          "img3": "https://k.kakaocdn.net/dn/ndfqS/btrKBrrJmUs/pkDgn02EKkhY1KKuPgl930/img_110x110.jpg"
+        }
+      ]
+    },
+    {
+      "ID": 3,
+      "JobDetailImageItem": [
+        {
+          "id": 0,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31632%2Ffztuwbtsydpj3n5e__1080_790.png&w=1000&q=75",
+          "imgAlt": "한국해양기상기술 - AI 개발자"
+        },
+        {
+          "id": 1,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31632%2F1s8eblnrm5gxww0t__1080_790.png&w=1000&q=75",
+          "imgAlt": "한국해양기상기술 - AI 개발자"
+        }
+      ],
+      "JobDetailCompany": [
+        {
+          "id": 0,
+          "title": "AI 개발자",
+          "company": "한국해양기상기술",
+          "color": "#00AEAD",
+          "level": "응답률 매우 높음",
+          "levelPopUp": "지원 후 응답받을 확률이 95% 이상입니다.",
+          "location1": "서울",
+          "location2": "한국"
+        }
+      ],
+      "TagItems": [
+        {
+          "id": 0,
+          "tagLink": "",
+          "tag": "#연봉업계평균이상"
+        },
+        {
+          "id": 1,
+          "tagLink": "",
+          "tag": "#퇴사율5%이하"
+        },
+        {
+          "id": 2,
+          "tagLink": "",
+          "tag": "#50명이하"
+        },
+        {
+          "id": 3,
+          "tagLink": "",
+          "tag": "#설립10년이상"
+        },
+        {
+          "id": 4,
+          "tagLink": "",
+          "tag": "#간식"
+        },
+        {
+          "id": 5,
+          "tagLink": "",
+          "tag": "#IT, 컨텐츠"
+        }
+      ],
+      "JobSKillItems": [
+        {
+          "id": "0",
+          "skill": "VueJS"
+        },
+        {
+          "id": "1",
+          "skill": "AWS"
+        },
+        {
+          "id": "2",
+          "skill": "HTML5"
+        },
+        {
+          "id": "3",
+          "skill": "CSS3"
+        },
+        {
+          "id": "4",
+          "skill": "SASS"
+        },
+        {
+          "id": "5",
+          "skill": "Figma"
+        }
+      ],
+      "WorkPlaceItems": [
+        {
+          "id": 0,
+          "deadline": "마감일",
+          "deadlineText": "2023.02.28",
+          "place": "근무지역",
+          "placeText": "서울특별시 구로구 경인로 53길 90 STX-W Tower 1501호~1504호",
+          "lat": 37.5269,
+          "lng": 127.1083
+        }
+      ],
+      "CompanyInfoItems": [
+        {
+          "id": 0,
+          "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.e0784705.jpg",
+          "name": "한국해양기상기술",
+          "content": "IT, 컨텐츠"
+        }
+      ],
+      "RewardItems": [
+        {
+          "id": 0,
+          "recommender": "500,000원",
+          "volunteer": "500,000원",
+          "img1": "https://static.wanted.co.kr/images/avatars/2377756/e0d33338.jpg",
+          "img2": "https://lh3.googleusercontent.com/a/ALm5wu0Z7lx949YRHMQw0eFfbQMfxSmyGpuNVEBqDsEDOQ=s96-c",
+          "img3": "https://k.kakaocdn.net/dn/ndfqS/btrKBrrJmUs/pkDgn02EKkhY1KKuPgl930/img_110x110.jpg"
+        }
+      ]
+    },
+    {
+      "ID": 4,
+      "JobDetailImageItem": [
+        {
+          "id": 0,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1732%2Fdtwnnnyqab7dd6zg__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "룰루랩(lululab) - 서버(클라이언트)"
+        },
+        {
+          "id": 1,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1732%2Fdsivp8yekumgvqkt__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "룰루랩(lululab) - 서버(클라이언트)"
+        },
+        {
+          "id": 2,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1732%2F6p1lt0tcbktq7m07__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "룰루랩(lululab) - 서버(클라이언트)"
+        },
+        {
+          "id": 3,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1732%2Fjxchlrbgna5puqwf__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "룰루랩(lululab) - 서버(클라이언트)"
+        },
+        {
+          "id": 4,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1732%2Fuqyelse73ssbqn3r__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "룰루랩(lululab) - 서버(클라이언트)"
+        }
+      ],
+      "JobDetailCompany": [
+        {
+          "id": 0,
+          "title": "서버(클라이언트) 개발자",
+          "company": "룰루랩(lululab)",
+          "color": "#855af0",
+          "level": "응답률 평균 이상",
+          "levelPopUp": "지원 후 응답받을 확률이 75% 이상입니다.",
+          "location1": "서울",
+          "location2": "한국"
+        }
+      ],
+      "TagItems": [
+        {
+          "id": 0,
+          "tagLink": "",
+          "tag": "#연봉업계평균이상"
+        },
+        {
+          "id": 1,
+          "tagLink": "",
+          "tag": "#인원급성장"
+        },
+        {
+          "id": 2,
+          "tagLink": "",
+          "tag": "#퇴사율5%이하"
+        },
+        {
+          "id": 3,
+          "tagLink": "",
+          "tag": "#50명이하"
+        },
+        {
+          "id": 4,
+          "tagLink": "",
+          "tag": "#설립4~9년"
+        },
+        {
+          "id": 5,
+          "tagLink": "",
+          "tag": "#음료"
+        },
+        {
+          "id": 6,
+          "tagLink": "",
+          "tag": "#간식"
+        },
+        {
+          "id": 7,
+          "tagLink": "",
+          "tag": "#생일선물"
+        },
+        {
+          "id": 8,
+          "tagLink": "",
+          "tag": "#IT, 컨텐츠"
+        }
+      ],
+      "JobSKillItems": [
+        {
+          "id": "0",
+          "skill": "VueJS"
+        },
+        {
+          "id": "1",
+          "skill": "Java"
+        },
+        {
+          "id": "2",
+          "skill": "JavaScript"
+        },
+        {
+          "id": "3",
+          "skill": "SQL"
+        },
+        {
+          "id": "4",
+          "skill": "CRM"
+        },
+        {
+          "id": "5",
+          "skill": "SQL 서버"
+        },
+        {
+          "id": "6",
+          "skill": "JPA"
+        },
+        {
+          "id": "7",
+          "skill": "React.jg"
+        }
+      ],
+      "WorkPlaceItems": [
+        {
+          "id": 0,
+          "deadline": "마감일",
+          "deadlineText": "상시",
+          "place": "근무지역",
+          "placeText": "도산대로 318",
+          "lat": 37.522,
+          "lng": 127.0366
+        }
+      ],
+      "CompanyInfoItems": [
+        {
+          "id": 0,
+          "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.a8b313b1.png",
+          "name": "룰루랩(lululab)",
+          "content": "IT, 컨텐츠"
+        }
+      ],
+      "RewardItems": [
+        {
+          "id": 0,
+          "recommender": "500,000원",
+          "volunteer": "500,000원",
+          "img1": "https://static.wanted.co.kr/images/avatars/2377756/e0d33338.jpg",
+          "img2": "https://lh3.googleusercontent.com/a/ALm5wu0Z7lx949YRHMQw0eFfbQMfxSmyGpuNVEBqDsEDOQ=s96-c",
+          "img3": "https://k.kakaocdn.net/dn/ndfqS/btrKBrrJmUs/pkDgn02EKkhY1KKuPgl930/img_110x110.jpg"
+        }
+      ],
+      "PlaceAddress": [
+        {
+          "lat": 37.5102,
+          "lng": 127.04413
+        }
+      ]
+    },
+    {
+      "ID": 5,
+      "JobDetailImageItem": [
+        {
+          "id": 0,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29982%2Fzmeiefegac73kxqq__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "위시빈 - Web Back-End 개발자[10년 이상]"
+        },
+        {
+          "id": 1,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29982%2Fyr5vghfhrhgw0apo__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "위시빈 - Web Back-End 개발자[10년 이상]"
+        },
+        {
+          "id": 2,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29982%2Fyr5vghfhrhgw0apo__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "위시빈 - Web Back-End 개발자[10년 이상]"
+        },
+        {
+          "id": 3,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29982%2Fwvts0cjhjqt7xpxh__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "위시빈 - Web Back-End 개발자[10년 이상]"
+        },
+        {
+          "id": 4,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29982%2Fkmhh6rni3fwyhjf5__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "위시빈 - Web Back-End 개발자[10년 이상]"
+        },
+        {
+          "id": 5,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29982%2Fvu7oydyr4luo1rbh__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "위시빈 - Web Back-End 개발자[10년 이상]"
+        }
+      ],
+      "JobDetailCompany": [
+        {
+          "id": 0,
+          "title": "Web Back-End 개발자[10년 이상]",
+          "company": "위시빈",
+          "color": "#00AEAD",
+          "level": "응답률 매우 높음",
+          "levelPopUp": "지원 후 응답받을 확률이 95% 이상입니다.",
+          "location1": "서울",
+          "location2": "한국"
+        }
+      ],
+      "TagItems": [
+        {
+          "id": 0,
+          "tagLink": "",
+          "tag": "#연봉업계평균이상"
+        },
+        {
+          "id": 1,
+          "tagLink": "",
+          "tag": "#인원급성장"
+        },
+        {
+          "id": 2,
+          "tagLink": "",
+          "tag": "#50명이하"
+        },
+        {
+          "id": 3,
+          "tagLink": "",
+          "tag": "#설립4~9년"
+        },
+        {
+          "id": 4,
+          "tagLink": "",
+          "tag": "#수평적조직"
+        },
+        {
+          "id": 5,
+          "tagLink": "",
+          "tag": "#음료"
+        },
+        {
+          "id": 6,
+          "tagLink": "",
+          "tag": "#커피"
+        },
+        {
+          "id": 7,
+          "tagLink": "",
+          "tag": "#간식"
+        },
+        {
+          "id": 8,
+          "tagLink": "",
+          "tag": "#IT, 컨텐츠"
+        }
+      ],
+      "JobSKillItems": [
+        {
+          "id": "0",
+          "skill": "Linux"
+        },
+        {
+          "id": "1",
+          "skill": "MySQL"
+        },
+        {
+          "id": "2",
+          "skill": "Python"
+        },
+        {
+          "id": "3",
+          "skill": "AWS"
+        },
+        {
+          "id": "4",
+          "skill": "Docker"
+        },
+        {
+          "id": "5",
+          "skill": "Kubernetes"
+        }
+      ],
+      "WorkPlaceItems": [
+        {
+          "id": 0,
+          "deadline": "마감일",
+          "deadlineText": "2022.11.30",
+          "place": "근무지역",
+          "placeText": "서울특별시 중구 남대문로7길 16 한국빌딩 5층",
+          "lat": 37.5642,
+          "lng": 126.9812
+        }
+      ],
+      "CompanyInfoItems": [
+        {
+          "id": 0,
+          "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.f1825dd5.jpg",
+          "name": "위시빈",
+          "content": "IT, 컨텐츠"
+        }
+      ],
+      "RewardItems": [
+        {
+          "id": 0,
+          "recommender": "500,000원",
+          "volunteer": "500,000원",
+          "img1": "https://static.wanted.co.kr/images/avatars/2377756/e0d33338.jpg",
+          "img2": "https://lh3.googleusercontent.com/a/ALm5wu0Z7lx949YRHMQw0eFfbQMfxSmyGpuNVEBqDsEDOQ=s96-c",
+          "img3": "https://k.kakaocdn.net/dn/ndfqS/btrKBrrJmUs/pkDgn02EKkhY1KKuPgl930/img_110x110.jpg"
+        }
+      ]
+    },
+    {
+      "ID": 6,
+      "JobDetailImageItem": [
+        {
+          "id": 0,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15926%2Ftpgvmkgmc89lstlp__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "티빙(TVING) - DBA"
+        },
+        {
+          "id": 1,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15926%2Fxmrwrutfmx2xhzzp__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "티빙(TVING) - DBA"
+        },
+        {
+          "id": 2,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15926%2Fgmnkut7hhyzzxkro__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "티빙(TVING) - DBA"
+        },
+        {
+          "id": 3,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15926%2Fksvftodzbr4whgyu__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "티빙(TVING) - DBA"
+        },
+        {
+          "id": 4,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15926%2Fohrrr8f1w2zpffxi__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "티빙(TVING) - DBA"
+        },
+        {
+          "id": 5,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15926%2F2vik9phhclww7le4__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "티빙(TVING) - DBA"
+        },
+        {
+          "id": 6,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15926%2Fj7yui4yz4o797iin__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "티빙(TVING) - DBA"
+        },
+        {
+          "id": 7,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15926%2F6oynti2spxxhgji5__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "티빙(TVING) - DBA"
+        },
+        {
+          "id": 8,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15926%2Fpotc7pclexg1zezu__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "티빙(TVING) - DBA"
+        }
+      ],
+      "JobDetailCompany": [
+        {
+          "id": 0,
+          "title": "DBA",
+          "company": "티빙(TVING)",
+          "color": "#36f",
+          "level": "응답률 높음",
+          "levelPopUp": "지원 후 응답받을 확률이 90% 이상입니다.",
+          "location1": "서울",
+          "location2": "한국"
+        }
+      ],
+      "TagItems": [
+        {
+          "id": 0,
+          "tagLink": "",
+          "tag": "#연봉상위6~10%"
+        },
+        {
+          "id": 1,
+          "tagLink": "",
+          "tag": "#인원급성장"
+        },
+        {
+          "id": 2,
+          "tagLink": "",
+          "tag": "#51~300명"
+        },
+        {
+          "id": 3,
+          "tagLink": "",
+          "tag": "#설립3년이하"
+        },
+        {
+          "id": 4,
+          "tagLink": "",
+          "tag": "#어린이집"
+        },
+        {
+          "id": 5,
+          "tagLink": "",
+          "tag": "#셔틀버스"
+        },
+        {
+          "id": 6,
+          "tagLink": "",
+          "tag": "#건강검진"
+        },
+        {
+          "id": 7,
+          "tagLink": "",
+          "tag": "#의료비"
+        },
+        {
+          "id": 8,
+          "tagLink": "",
+          "tag": "#IT, 컨텐츠"
+        }
+      ],
+      "JobSKillItems": [
+        {
+          "id": "0",
+          "skill": "Linux"
+        },
+        {
+          "id": "1",
+          "skill": "MySQL"
+        },
+        {
+          "id": "2",
+          "skill": "Python"
+        },
+        {
+          "id": "3",
+          "skill": "AWS"
+        },
+        {
+          "id": "4",
+          "skill": "Docker"
+        },
+        {
+          "id": "5",
+          "skill": "Kubernetes"
+        }
+      ],
+      "WorkPlaceItems": [
+        {
+          "id": 0,
+          "deadline": "마감일",
+          "deadlineText": "상시",
+          "place": "근무지역",
+          "placeText": "서울시 마포구 상암산로 34 DMC디지털큐브 15층",
+          "lat": 37.5762,
+          "lng": 126.8892
+        }
+      ],
+      "CompanyInfoItems": [
+        {
+          "id": 0,
+          "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.0032366b.png",
+          "name": "티빙(TVING)",
+          "content": "IT, 컨텐츠"
+        }
+      ],
+      "RewardItems": [
+        {
+          "id": 0,
+          "recommender": "500,000원",
+          "volunteer": "500,000원",
+          "img1": "https://static.wanted.co.kr/images/avatars/2377756/e0d33338.jpg",
+          "img2": "https://lh3.googleusercontent.com/a/ALm5wu0Z7lx949YRHMQw0eFfbQMfxSmyGpuNVEBqDsEDOQ=s96-c",
+          "img3": "https://k.kakaocdn.net/dn/ndfqS/btrKBrrJmUs/pkDgn02EKkhY1KKuPgl930/img_110x110.jpg"
+        }
+      ]
+    },
+    {
+      "ID": 7,
+      "JobDetailImageItem": [
+        {
+          "id": 0,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fjhk6iry9ejxrp4uq__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "비주얼신 - 웹/서버 담당"
+        },
+        {
+          "id": 1,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Ffashoxiiilbbjsmr__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "비주얼신 - 웹/서버 담당"
+        },
+        {
+          "id": 2,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fckzxs6cep9jy7j2u__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "비주얼신 - 웹/서버 담당"
+        },
+        {
+          "id": 3,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fk3dxaod5e6sqmhp4__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "비주얼신 - 웹/서버 담당"
+        },
+        {
+          "id": 4,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fhaonlbdjyb0sinjk__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "비주얼신 - 웹/서버 담당"
+        },
+        {
+          "id": 5,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fkn48dppkkesdj1jv__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "비주얼신 - 웹/서버 담당"
+        },
+        {
+          "id": 6,
+          "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fhj2azdwwtkvxtjvl__1080_790.jpg&w=1000&q=75",
+          "imgAlt": "비주얼신 - 웹/서버 담당"
+        }
+      ],
+      "JobDetailCompany": [
+        {
+          "id": 0,
+          "title": "웹/서버 담당",
+          "company": "비주얼신",
+          "color": "#00AEAD",
+          "level": "응답률 매우 높음",
+          "levelPopUp": "지원 후 응답받을 확률이 95% 이상입니다.",
+          "location1": "서울",
+          "location2": "한국"
+        }
+      ],
+      "TagItems": [
+        {
+          "id": 0,
+          "tagLink": "",
+          "tag": "#휴게실"
+        },
+        {
+          "id": 1,
+          "tagLink": "",
+          "tag": "#복지포인트"
+        },
+        {
+          "id": 2,
+          "tagLink": "",
+          "tag": "#노트북"
+        },
+        {
+          "id": 3,
+          "tagLink": "",
+          "tag": "#IT, 컨텐츠"
+        }
+      ],
+      "JobSKillItems": [
+        {
+          "id": "0",
+          "skill": "Github"
+        },
+        {
+          "id": "1",
+          "skill": "JIRA"
+        },
+        {
+          "id": "2",
+          "skill": "Android"
+        },
+        {
+          "id": "3",
+          "skill": "iOS"
+        },
+        {
+          "id": "4",
+          "skill": "Java"
+        },
+        {
+          "id": "5",
+          "skill": "Jenkins"
+        },
+        {
+          "id": "6",
+          "skill": "안드로이드 개발"
+        }
+      ],
+      "WorkPlaceItems": [
+        {
+          "id": 0,
+          "deadline": "마감일",
+          "deadlineText": "2022.12.10",
+          "place": "근무지역",
+          "placeText": "서울 강남구 선릉로 578 태정빌딩 8층",
+          "lat": 37.510091,
+          "lng": 127.04413
+        }
+      ],
+      "CompanyInfoItems": [
+        {
+          "id": 0,
+          "imgUrl": "https://static.wanted.co.kr/images/wdes/0_5.6298c833.jpg",
+          "name": "비주얼신",
+          "content": "IT, 컨텐츠"
+        }
+      ],
+      "RewardItems": [
+        {
+          "id": 0,
+          "recommender": "500,000원",
+          "volunteer": "500,000원",
+          "img1": "https://static.wanted.co.kr/images/avatars/2377756/e0d33338.jpg",
+          "img2": "https://lh3.googleusercontent.com/a/ALm5wu0Z7lx949YRHMQw0eFfbQMfxSmyGpuNVEBqDsEDOQ=s96-c",
+          "img3": "https://k.kakaocdn.net/dn/ndfqS/btrKBrrJmUs/pkDgn02EKkhY1KKuPgl930/img_110x110.jpg"
+        }
+      ],
+      "PlaceAddress": [
+        {
+          "lat": 37.5102,
+          "lng": 127.04413
         }
       ]
     }

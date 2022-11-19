@@ -2,10 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   width: inherit;
-  margin: 0 -0.625rem;
+  margin-right: -0.625rem;
+  margin-left: -0.8rem;
 }
 .jobListItem {
-  width: calc(25% - 1.25rem);
+  width: calc(25%);
   padding: 0.625rem;
   list-style: none;
   display: inline-block;
