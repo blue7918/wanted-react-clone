@@ -5,6 +5,38 @@
   margin-top: 75px;
   text-align: center;
 }
+@media (min-width: 1375px) and (max-width: 1405px) {
+  .topArrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5.5rem;
+    width: 30px;
+    height: 60px;
+    opacity: .5;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    z-index: 5;
+  }
+}
+@media (min-width: 1406px) and (max-width: 1430px){
+  .topArrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 120px;
+    width: 30px;
+    height: 60px;
+    opacity: .5;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    z-index: 5;
+  }
+}
 .topArrow{
   display: flex;
   align-items: center;

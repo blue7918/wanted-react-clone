@@ -133,9 +133,7 @@ function Header() {
 
           <ul className="navbar__list">
             <li>
-              <Link to="/jobdetail">
-                <div>채용</div>
-              </Link>
+              <div>채용</div>
             </li>
             <li>
               <div>이벤트</div>

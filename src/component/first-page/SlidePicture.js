@@ -39,7 +39,9 @@ function SlidePicture() {
     slidesToScroll: 1,
     autoplay: true,
     centerMode: true,
+    // centerPadding: '19vw',
     centerPadding: '310px',
+    
     nextArrow: <Next />,
     prevArrow: <Prev />,
   };
@@ -76,9 +78,19 @@ function SlidePicture() {
   `;
 
   const Image = styled.img`
-    width: 1060px;
-    height: 300px;
-    border-radius: 4px;
+    width: 66.25rem;
+    height: 18.75rem;
+    border-radius: .25rem;
+    @media only screen and (max-width: 1430px){
+      width: 49rem;
+      height: 17rem;
+      border-radius: .25rem;
+    }
+    @media only screen and (max-width: 1405px){
+      width: 46rem;
+      height: 15rem;
+      border-radius: .25rem;
+    }
   `;
 
   return (

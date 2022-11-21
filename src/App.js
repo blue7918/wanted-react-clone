@@ -19,7 +19,10 @@ import MainPage from './Main';
 import DevelopPage from './Develop';
 import JobDetailPage from './JobDetail';
 import SearchPage from './component/search-page/SearchPage';
-import { Accordion} from 'bootstrap';
+import BookMarkCollection from './component/develop-page/3.JobListBookmark/BookMarkCollection'
+import { Accordion } from 'bootstrap';
+
+import React from 'react';
 
 function App() {
   return (
@@ -27,8 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/develop" element={<DevelopPage />} />
-        <Route path="/jobdetail" element={<JobDetailPage />} />
         <Route path="/develop/:detailpage" element={<JobDetailPage />} />
+        <Route path="/develop/bookmark" element={<BookMarkCollection />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/search/:searchedCompany" element={<SearchPage />} />
       </Routes>
