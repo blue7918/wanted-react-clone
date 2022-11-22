@@ -4,12 +4,12 @@ import Items from '../../../json/JobListItem.json';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteBookMark } from '../../../modules/bookMark';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function BookMarkCollection() {
   const bookMarkList = useSelector((state) => state.bookmarking);
   const newArray = [];
-  const markArray = [];
+  const [bookMarkArray, setBookMarkArray]=useState([]);
   const dispatch = useDispatch();
   const bookMarkToggle = (e) => {
     if (bookMarkList.includes(e)) {
@@ -18,26 +18,23 @@ function BookMarkCollection() {
     }
   };
   useEffect(() => {
+    setBookMarkArray([]);
+    console.log(bookMarkList);
     for (let i = 0; i < bookMarkList.length; i++) {
       newArray.push(Items.JobItems.filter((e) => e.id === bookMarkList[i]));
-      markArray.push(newArray[i][0]);
+      setBookMarkArray((temp)=>[...temp,newArray[i][0]])
+      console.log(bookMarkArray);
+
     }
   }, [bookMarkToggle]);
-  console.log(markArray);
+
   return (
     <>
       <Header></Header>
       <div className="bookMarkContainer">
         <p>북마크</p>
-        <div>
-          {markArray.map((item) => (
-            <div key={item.key}>
-              <span>{item.position}</span>
-            </div>
-          ))}
-        </div>
-        {/* <ul className="jobListItemContainer">
-          {markArray.map((item) => (
+        {bookMarkList.length===0?<div className='emptyArr'>아직 북마크한 포지션이 없습니다.</div>:<ul className="jobListItemContainer">
+          {bookMarkArray.map((item) => (
             <li className="jobListItem" key={item.id}>
               <button
                 className="bookmarkButton"
@@ -94,7 +91,8 @@ function BookMarkCollection() {
               </Link>
             </li>
           ))}
-        </ul> */}
+        </ul>}
+        
       </div>
     </>
   );

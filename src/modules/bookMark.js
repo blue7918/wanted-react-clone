@@ -23,7 +23,7 @@ function bookmarking(state = initialState, action) {
     case ADDBOOKMARK:
       return [...state, action.id];
     case DELETEBOOKMARK:
-      return [state.filter((e) => e !== action.id)];
+      return state.filter((e) => e !== action.id);
     default:
       return state;
   }

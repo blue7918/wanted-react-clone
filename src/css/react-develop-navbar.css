@@ -11,7 +11,7 @@
   padding-bottom: 1.25rem;
   margin: 0 auto;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1090px) {
   .categoryNavbarBody {
     margin: 0 auto;
     width: 87.72%;
@@ -93,13 +93,28 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.filterListButtonContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 1.563rem;
-  border-bottom: 0.063rem solid rgba(236, 236, 236, 0.7);
+/* @media (min-width:600px) and (max-width:900px) */
+@media (min-width:600px) and (max-width:1090px){
+  .filterListButtonContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 87.72%;
+    justify-content: space-between;
+    padding-bottom: 1.563rem;
+    border-bottom: 0.063rem solid rgba(236, 236, 236, 0.7);
+  }
 }
+@media (min-width:1090px) {
+  .filterListButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1.563rem;
+    border-bottom: 0.063rem solid rgba(236, 236, 236, 0.7);
+  }
+}
+
 .filterListButtonBox {
   display: flex;
   align-items: center;
@@ -361,18 +376,50 @@
   color: #999;
   margin-top: 6px;
 }
-.jobListItemContainer {
-  display: flex;
-  flex-wrap: wrap;
-  width: inherit;
-  margin: 0 -0.625rem;
+@media (min-width: 600px) and (max-width: 1090px){
+  .jobListItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+  }
 }
-.jobListItem {
-  width: calc(25% - 1.25rem);
-  padding: 0.625rem;
-  list-style: none;
-  display: inline-block;
-  vertical-align: top;
+@media (min-width: 1091px){
+  .jobListItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    margin: 0 -0.625rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+  .jobListItem {
+    width: calc(50% - 1.25rem) !important;
+    padding: 0.625rem;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }  
+}
+@media (min-width: 900px) and (max-width: 1090px){
+  .jobListItem {
+    width: calc(33% - 1.25rem) !important;
+    padding: 0.625rem;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }  
+}
+@media (min-width: 1090px){
+  .jobListItem {
+    width: calc(25% - 1.25rem);
+    padding: 0.625rem;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 .jobListItem header {
   padding-bottom: 75%;
@@ -506,4 +553,36 @@
   font-weight: 700;
   color: #333;
   padding: 50px 0 20px;
+}
+
+.collectionButton{
+  color: #36f;
+  margin-bottom: 12px;
+}
+.collectionButton >button{
+  display: flex;
+  align-items: center;
+}
+.collectionButton >button> svg{
+  width: 11px;
+  height: 16px;
+  margin-right: 8px;
+}
+.collectionButton >button> svg:last-of-type {
+  width: 10px;
+    margin: 0 0 0 2px;
+}
+.collectionButton >button> span{
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.emptyArr {
+  margin: 240px 0;
+  color: #d1d1d1;
+  font-size: 24px;
+  text-align: center;
 }

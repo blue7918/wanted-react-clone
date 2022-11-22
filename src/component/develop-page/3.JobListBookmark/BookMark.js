@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 function BookMark() {
   return (
     <Link to="/develop/bookmark">
+      <div  className='collectionButton'>
       <button type="button">
         <svg
           width="13"
@@ -28,6 +29,8 @@ function BookMark() {
           ></path>
         </svg>
       </button>
+      </div>
+      
     </Link>
   );
 }
