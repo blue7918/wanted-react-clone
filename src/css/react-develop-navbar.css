@@ -194,11 +194,19 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.tagFilter {
-  padding-top: 1.563rem;
-  max-width: 66.25rem;
-  margin: 0 auto;
+@media (max-width: 1090px){
+  .tagFilter {
+    padding-top: 1.563rem;
+    width:88%;
+    margin: 0 auto;
+  }  
+}
+@media (min-width:1090px){
+  .tagFilter {
+    padding-top: 1.563rem;
+    max-width: 66.25rem;
+    margin: 0 auto;
+  }
 }
 .tagList {
   width: 100%;
@@ -258,8 +266,17 @@
 .jobListWrapper {
   margin-bottom: 0.75rem;
 }
-.jobListBookmarkContainer {
-  margin-bottom: 0.75rem;
+@media (max-width: 1090px){
+  .jobListBookmarkContainer {
+    margin-bottom: 0.75rem;
+    width: 88%;
+    margin: 0 auto;
+  }  
+}
+@media (min-width: 1090px){
+  .jobListBookmarkContainer {
+    margin-bottom: 0.75rem;
+  }
 }
 .make38pxSpace {
   height: 2.375rem;
@@ -301,12 +318,23 @@
   color: #333;
   margin: 20px 0 14px;
 }
-.featuredCompanyList {
-  margin: 0 -0.625rem 2.5rem -0.625rem;
-  display: flex;
-  flex-wrap: wrap;
-  width: inherit;
-  align-items: center;
+@media (max-width: 1090px){
+  .featuredCompanyList {
+    margin-bottom: 2.5rem;
+    width: 89vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media (min-width: 1090px){
+  .featuredCompanyList {
+    margin: 0 -0.625rem 2.5rem -0.625rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    align-items: center;
+  }
 }
 .featuredCompanyListItem {
   width: calc(21.6% - 1.125rem);
