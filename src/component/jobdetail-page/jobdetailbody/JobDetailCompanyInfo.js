@@ -18,8 +18,8 @@ function JobDetailCompanyInfo() {
   //   /* padding: 25px 30px; */
   // `;
   let Strong = styled.span`
-  font-weight: 800;
-  color: #666;
+    font-weight: 800;
+    color: #666;
   `;
   return (
     <>
@@ -43,7 +43,7 @@ function JobDetailCompanyInfo() {
                 <span>팔로우</span>
               </button>
             </section>
-            <>
+            {/* <>
               <div class="accordionWrapper accordion accordion-flush  ">
                 <div class="accordion-item ">
                   <h2 class="accordion-header" id="flush-headingOne">
@@ -112,7 +112,7 @@ function JobDetailCompanyInfo() {
                   </div>
                 </div>
               </div>
-            </>
+            </> */}
             <div className="jobWarning">
               <svg className="" width="24" height="24" viewBox="0 0 24 24">
                 <g fill="currentColor" fillRule="evenodd">

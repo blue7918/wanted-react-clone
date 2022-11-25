@@ -22,7 +22,6 @@ function JobListContainer() {
           <button
             className="bookmarkButton"
             type="button"
-            aria-label="bookmark button"
             onClick={() => bookMarkToggle(item.id)}
           >
             <svg
